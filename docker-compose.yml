@@ -1,7 +1,10 @@
 version: '3.8'
 
 services:
+
   db:
+    
+
     image: postgres:16.4
     restart: always
     ports:
@@ -14,6 +17,7 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data 
     
+<<<<<<< HEAD
   pgadmin:
     image: dpage/pgadmin4:latest
     restart: always
@@ -28,3 +32,10 @@ services:
 volumes:
   postgres-data:
  
+=======
+
+
+
+volumes:
+  postgres-data:
+>>>>>>> c43237d (Revert "Remove unused lines")
