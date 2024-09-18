@@ -12,6 +12,7 @@ services:
        POSTGRES_PASSWORD: password1
        POSTGRES_DB: my_database
     volumes:
+<<<<<<< HEAD
       - postgres-data:/var/lib/postgresql/data 
     
   pgadmin:
@@ -28,3 +29,6 @@ services:
 volumes:
   postgres-data:
  
+=======
+      - postgres-data:/var/lib/postgresql/data 
+>>>>>>> e28e59864a862cbaef50b2a94d4863b52dde8979
