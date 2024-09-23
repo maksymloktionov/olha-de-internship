@@ -1,1 +1,8 @@
-polishchuk/
+polishchuk/bin
+polishchuk/etc
+polishchuk/include
+polishchuk/lib
+polishchuk/lib64
+polishchuk/cfg
+polishchuk/share
+polishchuk/pyvenv.cfg
