@@ -1,6 +1,6 @@
-beautifulsoup4==4.12.3
-numpy==1.25.2
-pandas==2.2.3
-psycopg2==2.9.9
-Requests==2.32.3
-SQLAlchemy==2.0.35
+beautifulsoup4
+numpy
+pandas
+psycopg2
+Requests
+SQLAlchemy

@@ -68,7 +68,7 @@ df['end_date'] = df['end_date'].replace(['present',"present[49]","present[50]" ,
 df
 
 # %%
-engine = create_engine('postgresql://postgres:password@localhost:5544/postgres')
+engine = create_engine('postgresql://mydb:password@localhost:5555/postgres')
 
 df.to_sql(
     name="warcrimes",

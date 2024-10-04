@@ -1,0 +1,5 @@
+INFO:root:Parsed headers: ['Date', 'Conflict', 'Location', 'Russia and its allies', 'Opponent(s)', 'Result for Russia']
+INFO:root:Cleaning data
+INFO:root:Finished cleaning data
+INFO:root:Saving data to CSV: /home/olha/olha-de-internship/russianwars.csv
+INFO:root:Saved
