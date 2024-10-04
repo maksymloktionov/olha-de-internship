@@ -53,7 +53,7 @@ df[["Start date","End date"]] = df["Date"].str.split("–",n=1,expand=True)
 df
 
 # %%
-df.to_csv(r'/home/olha/repos/olha-de-internship/russianwars.csv')
+df.to_csv(r'/home/olha/olha-de-internship/russianwars1.csv')
 
 # %%
 df.replace({np.nan: None}, inplace=True)
