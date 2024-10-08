@@ -13,7 +13,6 @@ logging.basicConfig(level=logging.INFO)
 class WikiParseWar:
     def __init__(self,url):
         self.url = url
-        self.soup = None
         self.df = pd.DataFrame()
         logging.info(f'DATABASE_URL: {os.getenv("DATABASE_URL")}')
     
@@ -26,31 +25,35 @@ class WikiParseWar:
             logging.error (f'Error fetching page {e}')
 
     def getTables(self):
-        tables = self.soup.find_all('table',class_='wikitable')
         
-        return tables
+        return self.soup.find_all('table',class_='wikitable')
     
-    def parseTables(self,table_index):
+    def parse_tables(self,table_index):
         tables = self.getTables()
         rus_fed_table = tables[table_index]
 
-        headers = [header.get_text(strip=True) for header in rus_fed_table.find_all('th')]
-        logging.info(f"Parsed headers: {headers}")
-
-        df = pd.DataFrame(columns=headers)
+        headers = self.extract_headers(rus_fed_table)
+        data = []
 
         column_data = rus_fed_table.find_all('tr')
         for row in column_data[1:]:
-            row_data = row.find_all('td')
-            each_row = [data.text.strip() for data in row_data]
-            #print(each_row)
-
-            length = len(df)
-            df.loc[length] = each_row
-
-            self.df = df
+            row_data = self.parse_row(row)
+            data.append(row_data)
+            
+        self.df = pd.DataFrame(data,columns=headers)
         return self.df
     
+    def extract_headers(self,table):
+        headers = [header.get_text(strip=True) for header in table.find_all('th')]
+        logging.info(f'Parsed headers:{headers}')
+        return headers
+
+    def parse_row(self,row):
+        row_data = row.find_all('td')
+        each_row = [data.text.strip() for data in row_data]
+        return each_row
+    
+
     def pdClean(self):
        logging.info('Cleaning data')
        
@@ -61,10 +64,10 @@ class WikiParseWar:
        
        logging.info('Finished cleaning data')
 
-   # def csvSave(self,csv_path):
-     #   logging.info(f"Saving data to CSV: {csv_path}")
-      #  self.df.to_csv(csv_path,index=False)  
-       # logging.info('Saved')
+    def csvSave(self,csv_path):
+        logging.info(f"Saving data to CSV: {csv_path}")
+        self.df.to_csv(csv_path,index=False)  
+        logging.info('Saved')
 
     def dbCon(self, table_name):
         logging.info(f'Saving data to database: {table_name}')
@@ -88,8 +91,8 @@ class WikiParseWar:
 if __name__ == "__main__":
         scraper = WikiParseWar('https://en.wikipedia.org/wiki/List_of_wars_involving_Russia#Russian_Federation_(1991%E2%80%93present)')   
         scraper.getPage() 
-        scraper.parseTables(8) 
-        scraper.pdClean()  
-            #scraper.csvSave('/home/olha/olha-de-internship/russianwars.csv') 
+        scraper.parse_tables(8) 
+        scraper.pdClean()
+        scraper.csvSave('/home/olha/olha-de-internship/file.csv') 
         scraper.dbCon('warcrimes')
 
