@@ -10,21 +10,20 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-class WikiParseWar:
+class Wiki_ParseWar:
     def __init__(self,url):
         self.url = url
-        self.df = pd.DataFrame()
         logging.info(f'DATABASE_URL: {os.getenv("DATABASE_URL")}')
     
 
-    def getPage(self):
+    def get_Page(self):
         try:
             page = requests.get(self.url)
             self.soup = BeautifulSoup(page.text,'html')
         except requests.RequestException as e:
             logging.error (f'Error fetching page {e}')
 
-    def getTables(self):
+    def get_Tables(self):
         
         return self.soup.find_all('table',class_='wikitable')
     
@@ -54,7 +53,7 @@ class WikiParseWar:
         return each_row
     
 
-    def pdClean(self):
+    def pd_Clean(self):
        logging.info('Cleaning data')
        
        self.df[["Start date","End date"]] = self.df["Date"].str.split("–",n=1,expand=True)
@@ -64,12 +63,12 @@ class WikiParseWar:
        
        logging.info('Finished cleaning data')
 
-    def csvSave(self,csv_path):
+    def csv_Save(self,csv_path):
         logging.info(f"Saving data to CSV: {csv_path}")
         self.df.to_csv(csv_path,index=False)  
         logging.info('Saved')
 
-    def dbCon(self, table_name):
+    def db_Con(self, table_name):
         logging.info(f'Saving data to database: {table_name}')
         database_url = os.getenv('DATABASE_URL')
         if not database_url:
@@ -89,10 +88,10 @@ class WikiParseWar:
 
 
 if __name__ == "__main__":
-        scraper = WikiParseWar('https://en.wikipedia.org/wiki/List_of_wars_involving_Russia#Russian_Federation_(1991%E2%80%93present)')   
-        scraper.getPage() 
-        scraper.parse_tables(8) 
-        scraper.pdClean()
-        scraper.csvSave('/home/olha/olha-de-internship/file.csv') 
-        scraper.dbCon('warcrimes')
+    scraper = Wiki_ParseWar('https://en.wikipedia.org/wiki/List_of_wars_involving_Russia#Russian_Federation_(1991%E2%80%93present)')   
+    scraper.get_Page() 
+    scraper.parse_tables(8) 
+    scraper.pd_Clean()
+    scraper.csv_Save('/home/olha/olha-de-internship/file.csv') 
+    scraper.db_Con('warcrimes')
 
