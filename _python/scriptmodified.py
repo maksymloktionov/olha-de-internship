@@ -11,24 +11,27 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 class Wiki_ParseWar:
+    #this is an instance method
     def __init__(self,url):
         self.url = url
         logging.info(f'DATABASE_URL: {os.getenv("DATABASE_URL")}')
     
-
-    def get_Page(self):
+    @staticmethod
+    def get_Page(url):
         try:
-            page = requests.get(self.url)
-            self.soup = BeautifulSoup(page.text,'html')
+            page = requests.get(url)
+            soup = BeautifulSoup(page.text,'html')
+            return soup
         except requests.RequestException as e:
             logging.error (f'Error fetching page {e}')
-
-    def get_Tables(self):
-        
-        return self.soup.find_all('table',class_='wikitable')
+            return None
     
-    def parse_tables(self,table_index):
-        tables = self.getTables()
+    def get_Tables(self,soup):
+        
+        return soup.find_all('table',class_='wikitable')
+    
+    def parse_tables(self,soup,table_index):
+        tables = self.get_Tables(soup)
         rus_fed_table = tables[table_index]
 
         headers = self.extract_headers(rus_fed_table)
@@ -84,14 +87,14 @@ class Wiki_ParseWar:
         logging.info('Saved')
 
    
-        
-
-
+    def run(self,table_index,csv_path,table_name):
+        soup = self.get_Page(self.url)
+        if soup:
+            self.parse_tables(soup,table_index)
+            self.pd_Clean()
+            self.csv_Save(csv_path)
+            self.db_Con(table_name)
 if __name__ == "__main__":
-    scraper = Wiki_ParseWar('https://en.wikipedia.org/wiki/List_of_wars_involving_Russia#Russian_Federation_(1991%E2%80%93present)')   
-    scraper.get_Page() 
-    scraper.parse_tables(8) 
-    scraper.pd_Clean()
-    scraper.csv_Save('/home/olha/olha-de-internship/file.csv') 
-    scraper.db_Con('warcrimes')
-
+    url = 'https://en.wikipedia.org/wiki/List_of_wars_involving_Russia#Russian_Federation_(1991%E2%80%93present'
+    scraper = Wiki_ParseWar(url)   
+    scraper.run(table_index=8,csv_path='/home/olha/olha-de-internship/file.csv',table_name='warcrimes')
