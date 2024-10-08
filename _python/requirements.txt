@@ -1,6 +1,0 @@
-beautifulsoup4
-numpy
-pandas
-psycopg2
-Requests
-SQLAlchemy
