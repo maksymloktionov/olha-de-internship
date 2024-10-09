@@ -8,7 +8,7 @@ import os
 import logging
 
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',level=logging.INFO)
 
 class Wiki_ParseWar:
     #this is an instance method
