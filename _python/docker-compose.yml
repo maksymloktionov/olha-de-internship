@@ -16,10 +16,12 @@ services:
     build:
       context: .
       dockerfile: DockerFile
+    container_name: python-postgres-app
     depends_on:
       - db
     environment:
       DATABASE_URL: postgresql://user1:password1@db/my_database
+    tty: true
       
 volumes:
   pgdata:
