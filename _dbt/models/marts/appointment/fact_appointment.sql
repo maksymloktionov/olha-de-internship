@@ -8,8 +8,7 @@ with appointment_data as(
 patient_data as (
     select 
         Patient_id,
-        First_name,
-        Last_name
+        email
     from {{ref ('dim_patient')}}
 ),
 doctor_data as (
@@ -20,6 +19,7 @@ doctor_data as (
 procedure_data as (
     select  Procedure_id,
             Appointment_id
+           
     from {{ref('dim_medical_procedure')}}
 ),
 billing_data as (

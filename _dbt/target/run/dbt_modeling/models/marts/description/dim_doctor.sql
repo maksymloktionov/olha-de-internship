@@ -4,9 +4,14 @@
     
   as (
     with doctor as (
-    select * from "my_db"."public"."stg_doctor"
+    select  "DoctorID" as Doctor_id,
+            "DoctorName" as Doctor_name,
+            "Specialization",
+            "DoctorContact" as Doctor_contact
+    from "my_db"."public"."Doctor"       
+   
 )
 
-select * from doctor 
+select distinct Doctor_id from doctor 
 order by doctor_id
   );
