@@ -1,0 +1,316 @@
+[0m07:36:57.354102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d7900ef9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78ff26e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d79020c150>]}
+
+
+============================== 07:36:57.359722 | 418b0303-12d3-469d-a50d-51a2553eee22 ==============================
+[0m07:36:57.359722 [info ] [MainThread]: Running with dbt=1.8.3
+[0m07:36:57.360233 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/usr/app/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m07:36:57.486514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78e64fe90>]}
+[0m07:36:57.533298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78e685550>]}
+[0m07:36:57.534051 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m07:36:57.545269 [debug] [MainThread]: checksum: 871d77df38a0661255d31f261d53a40de07e4ab2030d521ff4a1932357e45ee6, vars: {}, profile: , target: dev, version: 1.8.3
+[0m07:36:57.546297 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:36:57.546947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78e68a990>]}
+[0m07:36:58.358294 [warn ] [MainThread]: [[33mWARNING[0m]: Found spaces in the name of `seed.dbt_modeling.Medical
+Procedure`
+[0m07:36:58.359014 [warn ] [MainThread]: [[33mWARNING[0m]: Spaces found in 1 resource name(s). This is deprecated, and
+may lead to errors when using dbt. For more information: https://docs.getdbt.com
+/reference/global-configs/legacy-behaviors#require_resource_names_without_spaces
+Run again with `--debug` to see them all.
+[0m07:36:58.359493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78e4c9710>]}
+[0m07:36:58.366864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78fe3ac90>]}
+[0m07:36:58.428870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78e4d4a50>]}
+[0m07:36:58.429355 [info ] [MainThread]: Found 5 seeds, 415 macros
+[0m07:36:58.429766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78e45f390>]}
+[0m07:36:58.431660 [info ] [MainThread]: 
+[0m07:36:58.432186 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m07:36:58.436739 [debug] [ThreadPool]: Acquiring new postgres connection 'list_my_db'
+[0m07:36:58.525634 [debug] [ThreadPool]: Using postgres connection "list_my_db"
+[0m07:36:58.526213 [debug] [ThreadPool]: On list_my_db: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "dbt_modeling", "target_name": "dev", "connection_name": "list_my_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m07:36:58.526661 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:36:58.535760 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m07:36:58.537108 [debug] [ThreadPool]: On list_my_db: Close
+[0m07:36:58.538713 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_my_db, now list_my_db_public)
+[0m07:36:58.544738 [debug] [ThreadPool]: Using postgres connection "list_my_db_public"
+[0m07:36:58.545087 [debug] [ThreadPool]: On list_my_db_public: BEGIN
+[0m07:36:58.545354 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:36:58.548921 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m07:36:58.549293 [debug] [ThreadPool]: Using postgres connection "list_my_db_public"
+[0m07:36:58.549617 [debug] [ThreadPool]: On list_my_db_public: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "dbt_modeling", "target_name": "dev", "connection_name": "list_my_db_public"} */
+select
+      'my_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'my_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'my_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m07:36:58.552529 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m07:36:58.553778 [debug] [ThreadPool]: On list_my_db_public: ROLLBACK
+[0m07:36:58.554245 [debug] [ThreadPool]: On list_my_db_public: Close
+[0m07:36:58.558944 [debug] [MainThread]: Using postgres connection "master"
+[0m07:36:58.559299 [debug] [MainThread]: On master: BEGIN
+[0m07:36:58.559569 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:36:58.562886 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m07:36:58.563273 [debug] [MainThread]: Using postgres connection "master"
+[0m07:36:58.563711 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "dbt_modeling", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m07:36:58.566834 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m07:36:58.568097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78e45fa10>]}
+[0m07:36:58.568505 [debug] [MainThread]: On master: ROLLBACK
+[0m07:36:58.569104 [debug] [MainThread]: Using postgres connection "master"
+[0m07:36:58.569402 [debug] [MainThread]: On master: BEGIN
+[0m07:36:58.569994 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m07:36:58.570299 [debug] [MainThread]: On master: COMMIT
+[0m07:36:58.570584 [debug] [MainThread]: Using postgres connection "master"
+[0m07:36:58.570843 [debug] [MainThread]: On master: COMMIT
+[0m07:36:58.571262 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m07:36:58.571570 [debug] [MainThread]: On master: Close
+[0m07:36:58.572011 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:36:58.572332 [info ] [MainThread]: 
+[0m07:36:58.580587 [debug] [Thread-1 (]: Began running node seed.dbt_modeling.Appointment
+[0m07:36:58.581157 [info ] [Thread-1 (]: 1 of 5 START seed file public.Appointment ...................................... [RUN]
+[0m07:36:58.581713 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_my_db_public, now seed.dbt_modeling.Appointment)
+[0m07:36:58.582056 [debug] [Thread-1 (]: Began compiling node seed.dbt_modeling.Appointment
+[0m07:36:58.582395 [debug] [Thread-1 (]: Began executing node seed.dbt_modeling.Appointment
+[0m07:36:58.670407 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Appointment"
+[0m07:36:58.670780 [debug] [Thread-1 (]: On seed.dbt_modeling.Appointment: BEGIN
+[0m07:36:58.671077 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:36:58.674488 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m07:36:58.674900 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Appointment"
+[0m07:36:58.675190 [debug] [Thread-1 (]: On seed.dbt_modeling.Appointment: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "seed.dbt_modeling.Appointment"} */
+
+    create table "my_db"."public"."Appointment" ("AppointmentID" integer,"Date" date,"Time" timestamp without time zone,"PatientID" integer,"DoctorID" integer)
+  
+[0m07:36:58.676747 [debug] [Thread-1 (]: SQL status: CREATE TABLE in 0.0 seconds
+[0m07:36:59.204518 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Appointment"
+[0m07:36:59.204929 [debug] [Thread-1 (]: On seed.dbt_modeling.Appointment: 
+          insert into "my_db"."public"."Appointment" ("AppointmentID", "Date", "Time", "PatientID", "DoctorID") values
+          (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%...
+[0m07:36:59.218942 [debug] [Thread-1 (]: SQL status: INSERT 0 1000 in 0.0 seconds
+[0m07:36:59.224071 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_modeling.Appointment"
+[0m07:36:59.239045 [debug] [Thread-1 (]: On seed.dbt_modeling.Appointment: COMMIT
+[0m07:36:59.239384 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Appointment"
+[0m07:36:59.239669 [debug] [Thread-1 (]: On seed.dbt_modeling.Appointment: COMMIT
+[0m07:36:59.247876 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m07:36:59.249750 [debug] [Thread-1 (]: On seed.dbt_modeling.Appointment: Close
+[0m07:36:59.251118 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78d779fd0>]}
+[0m07:36:59.251712 [info ] [Thread-1 (]: 1 of 5 OK loaded seed file public.Appointment .................................. [[32mINSERT 1000[0m in 0.67s]
+[0m07:36:59.252464 [debug] [Thread-1 (]: Finished running node seed.dbt_modeling.Appointment
+[0m07:36:59.252912 [debug] [Thread-1 (]: Began running node seed.dbt_modeling.Billing
+[0m07:36:59.253380 [info ] [Thread-1 (]: 2 of 5 START seed file public.Billing .......................................... [RUN]
+[0m07:36:59.253962 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_modeling.Appointment, now seed.dbt_modeling.Billing)
+[0m07:36:59.254303 [debug] [Thread-1 (]: Began compiling node seed.dbt_modeling.Billing
+[0m07:36:59.254634 [debug] [Thread-1 (]: Began executing node seed.dbt_modeling.Billing
+[0m07:36:59.275249 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Billing"
+[0m07:36:59.275717 [debug] [Thread-1 (]: On seed.dbt_modeling.Billing: BEGIN
+[0m07:36:59.276020 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:36:59.279537 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m07:36:59.279985 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Billing"
+[0m07:36:59.280295 [debug] [Thread-1 (]: On seed.dbt_modeling.Billing: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "seed.dbt_modeling.Billing"} */
+
+    create table "my_db"."public"."Billing" ("InvoiceID" text,"PatientID" integer,"Items" text,"Amount" integer)
+  
+[0m07:36:59.283162 [debug] [Thread-1 (]: SQL status: CREATE TABLE in 0.0 seconds
+[0m07:36:59.677815 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Billing"
+[0m07:36:59.678222 [debug] [Thread-1 (]: On seed.dbt_modeling.Billing: 
+          insert into "my_db"."public"."Billing" ("InvoiceID", "PatientID", "Items", "Amount") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,...
+[0m07:36:59.685965 [debug] [Thread-1 (]: SQL status: INSERT 0 1000 in 0.0 seconds
+[0m07:36:59.686786 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_modeling.Billing"
+[0m07:36:59.688434 [debug] [Thread-1 (]: On seed.dbt_modeling.Billing: COMMIT
+[0m07:36:59.688728 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Billing"
+[0m07:36:59.689014 [debug] [Thread-1 (]: On seed.dbt_modeling.Billing: COMMIT
+[0m07:36:59.697054 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m07:36:59.698037 [debug] [Thread-1 (]: On seed.dbt_modeling.Billing: Close
+[0m07:36:59.698674 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78e648250>]}
+[0m07:36:59.699130 [info ] [Thread-1 (]: 2 of 5 OK loaded seed file public.Billing ...................................... [[32mINSERT 1000[0m in 0.44s]
+[0m07:36:59.699764 [debug] [Thread-1 (]: Finished running node seed.dbt_modeling.Billing
+[0m07:36:59.700239 [debug] [Thread-1 (]: Began running node seed.dbt_modeling.Doctor
+[0m07:36:59.700821 [info ] [Thread-1 (]: 3 of 5 START seed file public.Doctor ........................................... [RUN]
+[0m07:36:59.701284 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_modeling.Billing, now seed.dbt_modeling.Doctor)
+[0m07:36:59.701646 [debug] [Thread-1 (]: Began compiling node seed.dbt_modeling.Doctor
+[0m07:36:59.701944 [debug] [Thread-1 (]: Began executing node seed.dbt_modeling.Doctor
+[0m07:36:59.715666 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Doctor"
+[0m07:36:59.716118 [debug] [Thread-1 (]: On seed.dbt_modeling.Doctor: BEGIN
+[0m07:36:59.716432 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:36:59.720163 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m07:36:59.720618 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Doctor"
+[0m07:36:59.720937 [debug] [Thread-1 (]: On seed.dbt_modeling.Doctor: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "seed.dbt_modeling.Doctor"} */
+
+    create table "my_db"."public"."Doctor" ("DoctorID" integer,"DoctorName" text,"Specialization" text,"DoctorContact" text)
+  
+[0m07:36:59.723987 [debug] [Thread-1 (]: SQL status: CREATE TABLE in 0.0 seconds
+[0m07:37:00.121959 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Doctor"
+[0m07:37:00.122367 [debug] [Thread-1 (]: On seed.dbt_modeling.Doctor: 
+          insert into "my_db"."public"."Doctor" ("DoctorID", "DoctorName", "Specialization", "DoctorContact") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s...
+[0m07:37:00.129443 [debug] [Thread-1 (]: SQL status: INSERT 0 1000 in 0.0 seconds
+[0m07:37:00.130235 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_modeling.Doctor"
+[0m07:37:00.131739 [debug] [Thread-1 (]: On seed.dbt_modeling.Doctor: COMMIT
+[0m07:37:00.132032 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Doctor"
+[0m07:37:00.132290 [debug] [Thread-1 (]: On seed.dbt_modeling.Doctor: COMMIT
+[0m07:37:00.140640 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m07:37:00.141626 [debug] [Thread-1 (]: On seed.dbt_modeling.Doctor: Close
+[0m07:37:00.142167 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78d68a0d0>]}
+[0m07:37:00.142661 [info ] [Thread-1 (]: 3 of 5 OK loaded seed file public.Doctor ....................................... [[32mINSERT 1000[0m in 0.44s]
+[0m07:37:00.143272 [debug] [Thread-1 (]: Finished running node seed.dbt_modeling.Doctor
+[0m07:37:00.143826 [debug] [Thread-1 (]: Began running node seed.dbt_modeling.Medical Procedure
+[0m07:37:00.144325 [info ] [Thread-1 (]: 4 of 5 START seed file public.Medical Procedure ................................ [RUN]
+[0m07:37:00.144795 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_modeling.Doctor, now seed.dbt_modeling.Medical Procedure)
+[0m07:37:00.145114 [debug] [Thread-1 (]: Began compiling node seed.dbt_modeling.Medical Procedure
+[0m07:37:00.145414 [debug] [Thread-1 (]: Began executing node seed.dbt_modeling.Medical Procedure
+[0m07:37:00.164530 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Medical Procedure"
+[0m07:37:00.164961 [debug] [Thread-1 (]: On seed.dbt_modeling.Medical Procedure: BEGIN
+[0m07:37:00.165369 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:37:00.169272 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m07:37:00.169812 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Medical Procedure"
+[0m07:37:00.170170 [debug] [Thread-1 (]: On seed.dbt_modeling.Medical Procedure: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "seed.dbt_modeling.Medical Procedure"} */
+
+    create table "my_db"."public"."Medical Procedure" ("ProcedureID" integer,"ProcedureName" text,"AppointmentID" integer)
+  
+[0m07:37:00.173028 [debug] [Thread-1 (]: SQL status: CREATE TABLE in 0.0 seconds
+[0m07:37:00.470189 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Medical Procedure"
+[0m07:37:00.470616 [debug] [Thread-1 (]: On seed.dbt_modeling.Medical Procedure: 
+          insert into "my_db"."public"."Medical Procedure" ("ProcedureID", "ProcedureName", "AppointmentID") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),...
+[0m07:37:00.476646 [debug] [Thread-1 (]: SQL status: INSERT 0 1000 in 0.0 seconds
+[0m07:37:00.477365 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_modeling.Medical Procedure"
+[0m07:37:00.478949 [debug] [Thread-1 (]: On seed.dbt_modeling.Medical Procedure: COMMIT
+[0m07:37:00.479262 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Medical Procedure"
+[0m07:37:00.479577 [debug] [Thread-1 (]: On seed.dbt_modeling.Medical Procedure: COMMIT
+[0m07:37:00.488238 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m07:37:00.489073 [debug] [Thread-1 (]: On seed.dbt_modeling.Medical Procedure: Close
+[0m07:37:00.489550 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78d651d50>]}
+[0m07:37:00.490017 [info ] [Thread-1 (]: 4 of 5 OK loaded seed file public.Medical Procedure ............................ [[32mINSERT 1000[0m in 0.34s]
+[0m07:37:00.490673 [debug] [Thread-1 (]: Finished running node seed.dbt_modeling.Medical Procedure
+[0m07:37:00.491244 [debug] [Thread-1 (]: Began running node seed.dbt_modeling.Patient
+[0m07:37:00.492273 [info ] [Thread-1 (]: 5 of 5 START seed file public.Patient .......................................... [RUN]
+[0m07:37:00.493058 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_modeling.Medical Procedure, now seed.dbt_modeling.Patient)
+[0m07:37:00.493529 [debug] [Thread-1 (]: Began compiling node seed.dbt_modeling.Patient
+[0m07:37:00.493838 [debug] [Thread-1 (]: Began executing node seed.dbt_modeling.Patient
+[0m07:37:00.509310 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Patient"
+[0m07:37:00.509811 [debug] [Thread-1 (]: On seed.dbt_modeling.Patient: BEGIN
+[0m07:37:00.510250 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:37:00.514126 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m07:37:00.514625 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Patient"
+[0m07:37:00.514952 [debug] [Thread-1 (]: On seed.dbt_modeling.Patient: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "dbt_modeling", "target_name": "dev", "node_id": "seed.dbt_modeling.Patient"} */
+
+    create table "my_db"."public"."Patient" ("PatientID" integer,"firstname" text,"lastname" text,"email" text)
+  
+[0m07:37:00.517700 [debug] [Thread-1 (]: SQL status: CREATE TABLE in 0.0 seconds
+[0m07:37:00.904974 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Patient"
+[0m07:37:00.905403 [debug] [Thread-1 (]: On seed.dbt_modeling.Patient: 
+          insert into "my_db"."public"."Patient" ("PatientID", "firstname", "lastname", "email") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%...
+[0m07:37:00.912383 [debug] [Thread-1 (]: SQL status: INSERT 0 1000 in 0.0 seconds
+[0m07:37:00.913143 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_modeling.Patient"
+[0m07:37:00.914580 [debug] [Thread-1 (]: On seed.dbt_modeling.Patient: COMMIT
+[0m07:37:00.914877 [debug] [Thread-1 (]: Using postgres connection "seed.dbt_modeling.Patient"
+[0m07:37:00.915129 [debug] [Thread-1 (]: On seed.dbt_modeling.Patient: COMMIT
+[0m07:37:00.923294 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m07:37:00.924313 [debug] [Thread-1 (]: On seed.dbt_modeling.Patient: Close
+[0m07:37:00.924875 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '418b0303-12d3-469d-a50d-51a2553eee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78d646150>]}
+[0m07:37:00.925368 [info ] [Thread-1 (]: 5 of 5 OK loaded seed file public.Patient ...................................... [[32mINSERT 1000[0m in 0.43s]
+[0m07:37:00.925969 [debug] [Thread-1 (]: Finished running node seed.dbt_modeling.Patient
+[0m07:37:00.927215 [debug] [MainThread]: Using postgres connection "master"
+[0m07:37:00.927552 [debug] [MainThread]: On master: BEGIN
+[0m07:37:00.927872 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m07:37:00.930690 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m07:37:00.931065 [debug] [MainThread]: On master: COMMIT
+[0m07:37:00.931368 [debug] [MainThread]: Using postgres connection "master"
+[0m07:37:00.931677 [debug] [MainThread]: On master: COMMIT
+[0m07:37:00.932094 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m07:37:00.932402 [debug] [MainThread]: On master: Close
+[0m07:37:00.932860 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:37:00.933169 [debug] [MainThread]: Connection 'seed.dbt_modeling.Patient' was properly closed.
+[0m07:37:00.933713 [info ] [MainThread]: 
+[0m07:37:00.934269 [info ] [MainThread]: Finished running 5 seeds in 0 hours 0 minutes and 2.50 seconds (2.50s).
+[0m07:37:00.935878 [debug] [MainThread]: Command end result
+[0m07:37:00.962507 [info ] [MainThread]: 
+[0m07:37:00.963016 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:37:00.963430 [info ] [MainThread]: 
+[0m07:37:00.963799 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m07:37:00.964573 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 3.650707, "process_user_time": 4.554528, "process_kernel_time": 0.137743, "process_mem_max_rss": "115548", "process_out_blocks": "2800", "process_in_blocks": "0"}
+[0m07:37:00.965041 [debug] [MainThread]: Command `dbt seed` succeeded at 07:37:00.964940 after 3.65 seconds
+[0m07:37:00.965356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78ff53850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d78ff99850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79d793d586d0>]}
+[0m07:37:00.965679 [debug] [MainThread]: Flushing usage events
