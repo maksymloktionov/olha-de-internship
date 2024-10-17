@@ -1,0 +1,12 @@
+dbt_modeling:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: db
+      user: user
+      pass: password
+      port: 5432
+      dbname: my_db
+      schema: public
+      threads: 1
