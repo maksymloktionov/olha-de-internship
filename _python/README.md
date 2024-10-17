@@ -1,3 +1,3 @@
 # Scrapping a website 
 
-# This code parses a Wikipedia page 
+This code parses a Wikipedia page 
