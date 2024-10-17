@@ -2,4 +2,4 @@ select  "DoctorID" as Doctor_id,
         "DoctorName" as Doctor_name,
         "Specialization",
         "DoctorContact" as Doctor_contact
-    from {{ref('Doctor')}}        
+    from {{ref('doctor')}}        

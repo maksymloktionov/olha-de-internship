@@ -3,7 +3,7 @@ with billing as (
         "PatientID"  as Patient_id,
         "Items" as Procedure,
         "Amount"
-    from {{ref ('Billing')}}   
+    from {{ref ('billing')}}   
 )
 
 select distinct
@@ -12,4 +12,5 @@ select distinct
     Procedure,
     sum("Amount") over (partition by Procedure) as total_amount
 from billing
-order by total_amount desc ,Patient_id
+
+--order by total_amount desc ,Patient_id

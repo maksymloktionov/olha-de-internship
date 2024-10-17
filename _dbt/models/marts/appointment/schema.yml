@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: fct_appointment
-    description: "It is a fact table that contains information about appointments"
+  - name: fact_appointment
+    description: "It is a fact table that contains information about appointments."
     columns:
       - name: appointment_id
         description: "Primary key of the appointment."
@@ -10,28 +10,28 @@ models:
           - unique
           - not_null
       - name: patient_id
-        description: "Foreign key to the patient"
+        description: "Foreign key to the patient."
         tests:
           - not_null
           - relationships:
               to: ref('dim_patient')
               field: patient_id
       - name: doctor_id
-        description: "Foreign key to the doctor"
+        description: "Foreign key to the doctor."
         tests:
           - not_null
           - relationships:
               to: ref('dim_doctor')
               field: doctor_id
       - name: procedure_id
-        description: "Foreign key to the medical procedure "
+        description: "Foreign key to the medical procedure. "
         tests:
           - not_null
           - relationships:
               to: ref('dim_medical_procedure')
               field: procedure_id
       - name: invoice_id
-        description: "Foreign key to the billing"
+        description: "Foreign key to the billing."
         tests:
           - not_null
           - relationships:

@@ -3,9 +3,14 @@ with doctor as (
             "DoctorName" as Doctor_name,
             "Specialization",
             "DoctorContact" as Doctor_contact
-    from {{ref('Doctor')}}       
+    from {{ref('doctor')}}       
    
 )
 
-select distinct Doctor_id from doctor 
-order by doctor_id
+select distinct Doctor_id,
+                Doctor_name, 
+                "Specialization", 
+                Doctor_contact
+
+from doctor 
+--order by doctor_id

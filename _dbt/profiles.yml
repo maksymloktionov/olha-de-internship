@@ -9,4 +9,4 @@ dbt_modeling:
       port: 5432
       dbname: my_db
       schema: public
-      threads: 1
+      threads: 8

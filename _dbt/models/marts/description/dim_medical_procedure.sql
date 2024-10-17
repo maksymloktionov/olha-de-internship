@@ -4,7 +4,7 @@ with medical_procedure as (
         "ProcedureName" as Procedure_name,
        "AppointmentID" as Appointment_id
        
-        from {{ref ('Medical_Procedure')}}
+        from {{ref ('medical_procedure')}}
 ),
 
 pre_final as ( 
