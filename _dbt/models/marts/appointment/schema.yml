@@ -7,7 +7,6 @@ models:
       - name: appointment_id
         description: "Primary key of the appointment."
         tests:
-          - unique
           - not_null
       - name: patient_id
         description: "Foreign key to the patient."

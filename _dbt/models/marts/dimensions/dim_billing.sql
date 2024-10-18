@@ -1,3 +1,6 @@
+
+{{ config(materialized='table', sort='Procedure', dist='Invoice_id') }}
+
 with billing as (
     select  "InvoiceID" as Invoice_id,
         "PatientID"  as Patient_id,

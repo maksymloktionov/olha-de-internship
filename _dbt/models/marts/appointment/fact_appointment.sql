@@ -12,7 +12,7 @@ patient_data as (
     from {{ref ('dim_patient')}}
 ),
 doctor_data as (
-    select  Doctor_id
+    select Doctor_id
     from {{ref ('dim_doctor')}}
 ),
 
@@ -28,7 +28,7 @@ billing_data as (
     from {{ref ('dim_billing')}}
 )
 
-select  
+select distinct
     a.Appointment_id,
     a.Patient_id,
     a.Doctor_id,
@@ -42,5 +42,4 @@ join doctor_data d on a.Doctor_id = d.Doctor_id
 join procedure_data pr on a.Appointment_id = pr.Appointment_id
 join billing_data b on a.Patient_id = b.Patient_id
 
-
-
+--order by a.Appointment_id
