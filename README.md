@@ -35,7 +35,7 @@ cd demo
 docker-compose up -d
 python3 _python/wiki_scrapping.py
 ```
-### DBT
+### dbt
 ```
 docker-compose up -d
 docker exec -it dbt-modeling
