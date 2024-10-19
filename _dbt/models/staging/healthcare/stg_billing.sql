@@ -1,6 +1,7 @@
 {{
     config (
-        materialized = 'incremental'
+        materialized = 'incremental',
+        unique_key = "Invoice_id"
     )
 }}
 
@@ -14,7 +15,7 @@ select
     "PatientID" as Patient_id,
     "Items" as Procedure,
     "Amount",
-    "created_at"  
+    "created_at" as Created_at
 from {{ ref('billing') }}  
 
 {% if is_incremental() %}

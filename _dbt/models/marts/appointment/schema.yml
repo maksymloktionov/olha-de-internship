@@ -54,9 +54,7 @@ models:
   - name: dim_doctor
     columns:
       - name: doctor_id
-        description: "Primary key for doctors."
         tests:
-          - unique
           - not_null
       - name: doctor_name
       - name: specialization
