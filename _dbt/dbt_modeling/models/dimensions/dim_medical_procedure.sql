@@ -1,10 +1,10 @@
 with medical_procedure as (
     select 
-        "ProcedureID" as Procedure_id,
-        "ProcedureName" as Procedure_name,
-       "AppointmentID" as Appointment_id
+         Procedure_id,
+         Procedure_name,
+         Appointment_id
        
-        from {{ref ('medical_procedure')}}
+        from {{ref ('stg_medical_procedure')}}
 ),
 
 pre_final as ( 
