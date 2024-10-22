@@ -24,7 +24,8 @@ procedure_data as (
 ),
 billing_data as (
     select  Invoice_id,
-            Patient_id 
+            Patient_id ,
+            total_amount
     from {{ref ('dim_billing')}}
 )
 
@@ -34,7 +35,8 @@ select distinct
     a.Doctor_id,
     pr.Procedure_id,
     b.Invoice_id,
-    a.Appointment_date
+    a.Appointment_date,
+    b.total_amount
 from appointment_data a
 
 join patient_data p on a.Patient_id = p.Patient_id

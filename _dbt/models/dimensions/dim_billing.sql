@@ -1,17 +1,7 @@
-
-with billing as (
-    select  Invoice_id,
-            Patient_id,
-            Procedure,
-            "Amount"
-    from {{ref ('stg_billing')}}   
-)
-
-select distinct
+select 
     Invoice_id,
     Patient_id,
     Procedure,
-    sum("Amount") over (partition by Procedure) as total_amount
-from billing
-
---order by total_amount desc ,Patient_id
+    sum("Amount") as total_amount
+from {{ref('stg_billing')}}
+group by Invoice_id, Patient_id, Procedure
