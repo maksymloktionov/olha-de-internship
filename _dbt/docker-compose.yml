@@ -26,4 +26,5 @@ services:
       - db
     entrypoint: bash
     tty: true
+    platform: linux/amd64
 
