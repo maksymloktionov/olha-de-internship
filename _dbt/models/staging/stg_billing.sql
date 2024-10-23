@@ -6,13 +6,15 @@
 }}
 
 
-
 select 
     "InvoiceID" as Invoice_id,
     "PatientID" as Patient_id,
     "Items" as Procedure,
     "Amount",
-    "created_at"::timestamp as created_at
+    "created_at"::timestamp as created_at,
+    '{{ run_started_at }}' as run_started_at,
+    '{{ invocation_id }}' as invocation_id
+
 from {{ ref('billing') }}  
 
 {% if is_incremental() %}
