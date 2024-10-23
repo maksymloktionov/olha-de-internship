@@ -6,45 +6,45 @@ models:
     columns:
       - name: appointment_id
         description: "Primary key of the appointment."
-        tests:
+        data_tests:
           - not_null
       - name: patient_id
         description: "Foreign key to the patient."
-        tests:
+        data_tests:
           - not_null
           - relationships:
               to: ref('dim_patient')
               field: patient_id
       - name: doctor_id
         description: "Foreign key to the doctor."
-        tests:
+        data_tests:
           - not_null
           - relationships:
               to: ref('dim_doctor')
               field: doctor_id
       - name: procedure_id
         description: "Foreign key to the medical procedure. "
-        tests:
+        data_tests:
           - not_null
           - relationships:
               to: ref('dim_medical_procedure')
               field: procedure_id
       - name: invoice_id
         description: "Foreign key to the billing."
-        tests:
+        data_tests:
           - not_null
           - relationships:
               to: ref('dim_billing')
               field: invoice_id
       - name: appointment_date
-        tests:
+        data_tests:
           - not_null
 
   - name: dim_patient
     columns:
       - name: patient_id
         description: "Primary key for patients."
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: first_name
@@ -54,7 +54,7 @@ models:
   - name: dim_doctor
     columns:
       - name: doctor_id
-        tests:
+        data_tests:
           - not_null
       - name: doctor_name
       - name: specialization
@@ -63,7 +63,7 @@ models:
   - name: dim_medical_procedure
     columns:
       - name: procedure_id
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: procedure_name
@@ -73,7 +73,7 @@ models:
   - name: dim_billing
     columns:
       - name: invoice_id
-        tests:
+        data_tests:
           - unique
           - not_null
 
