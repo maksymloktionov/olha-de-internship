@@ -1,4 +1,4 @@
-"PatientID","firstname","lastname","email","created_at"
+PatientID,firstname,lastname,email,created_at
 919,Anallese,Halla,Anallese.Halla@yopmail.com,2024-10-22 19:29:16.486
 535,Shel,Dearborn,Shel.Dearborn@yopmail.com,2024-10-22 19:29:16.486
 830,Mara,Shuler,Mara.Shuler@yopmail.com,2024-10-22 19:29:16.486

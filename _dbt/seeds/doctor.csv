@@ -1,4 +1,4 @@
-"DoctorID","DoctorName","Specialization","DoctorContact","created_at"
+DoctorID,DoctorName,Specialization,DoctorContact,created_at
 116,Shell,Infectious disease,.@yopmail.com,2024-10-22 19:29:36.806
 752,Regina,Oncologist,.@yopmail.com,2024-10-22 19:29:36.806
 957,Sissy,Otolaryngologists,.@yopmail.com,2024-10-22 19:29:36.806

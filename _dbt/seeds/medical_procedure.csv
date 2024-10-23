@@ -1,4 +1,4 @@
-"ProcedureID","ProcedureName","AppointmentID","created_at"
+ProcedureID,ProcedureName,AppointmentID,created_at
 574,Allergy testing,701,2024-10-22 19:28:54.615
 432,Kidney transplant,955,2024-10-22 19:28:54.615
 854,Psychotherapy,363,2024-10-22 19:28:54.615
