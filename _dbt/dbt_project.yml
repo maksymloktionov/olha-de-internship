@@ -1,0 +1,12 @@
+name: dbt_modeling
+version: 1.0.0
+config-version: 2
+
+profile: dbt_modeling
+
+models:
+  dbt_modeling: 
+    dimensions:
+      +materialized: table
+    facts:
+      +materialized: table
