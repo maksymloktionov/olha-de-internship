@@ -1,0 +1,16 @@
+version: '3'
+services:
+  pyspark:
+    build:
+      context: .
+      dockerfile: Dockerfile  
+    ports:
+      - "4040:4040"  
+    volumes:
+      - .:/usr/src/app 
+    working_dir: /usr/src/app  
+    environment:
+      JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+      PATH: $JAVA_HOME/bin:$PATH
+   # command: ["python", "./spark.py"] 
+    tty: true
