@@ -9,6 +9,9 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 class WikiParser:
+    table_index = 8
+
+
     def __init__(self, url):
         self.url = url
         logging.info('WikiParser instance is created')
@@ -26,9 +29,9 @@ class WikiParser:
     def get_tables(self, soup):
         return soup.find_all('table', class_='wikitable')
     
-    def parse_tables(self, soup, table_index = 8):
+    def parse_tables(self, soup):
         tables = self.get_tables(soup)
-        rus_fed_table = tables[table_index]
+        rus_fed_table = tables[self.table_index]
 
         headers = self.extract_headers(rus_fed_table)
         data = []
@@ -39,12 +42,13 @@ class WikiParser:
             data.append(row_data)
             
         self.df = pd.DataFrame(data, columns=headers)
-        return self.df
+        
     
     def extract_headers(self, table):
         headers = [header.get_text(strip=True) for header in table.find_all('th')]
         logging.info(f'Parsed headers: {headers}')
         return headers
+    
     @staticmethod
     def parse_row(row):
         row_data = row.find_all('td')
@@ -54,12 +58,13 @@ class WikiParser:
     def clean_data(self):
        logging.info('Cleaning data')
        
-       self.df[["start_date", "end_date"]] = self.df["Date"].str.split("–", n=1, expand=True)
-       self.df.replace({np.nan: None}, inplace=True)
-       self.df.columns = self.df.columns.str.replace(' ', '_').str.lower()
-       self.df['end_date'] = self.df['end_date'].replace(['present', "present[49]", "present[50]", 'None', pd.NA, np.nan], np.nan)
+       self.df[["Start date","End date"]] = self.df["Date"].str.split("–",n=1,expand=True)
+       self.df.replace({np.nan:None},inplace=True)
+       self.df.columns = self.df.columns.str.replace(' ','_').str.lower()
+       self.df['end_date'] = self.df['end_date'].replace(['present',"present[49]","present[50]" ,'None', pd.NA, np.nan], np.nan)
        
        logging.info('Finished cleaning data')
+
 
     def save_to_db(self, table_name):
         logging.info(f'Saving data to database: {table_name}')
@@ -79,14 +84,14 @@ class WikiParser:
         except Exception as e:
             logging.error(f'Error saving to database: {e}')
 
-    def run(self, table_name, table_index=8):
-        soup = self.get_page(self.url)
+    def run(self, table_name):
+        soup = self.get_page(url)
         if soup:
-            self.parse_tables(soup, table_index)
+            self.parse_tables(soup)
             self.clean_data()
             self.save_to_db(table_name)
 
 if __name__ == "__main__":
     url = 'https://en.wikipedia.org/wiki/List_of_wars_involving_Russia#Russian_Federation_(1991%E2%80%93present)'
     scraper = WikiParser(url)   
-    scraper.run(table_index=8, table_name='warcrimes')
+    scraper.run(table_name='warcrimes')
