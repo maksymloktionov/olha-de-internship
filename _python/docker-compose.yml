@@ -17,6 +17,8 @@ services:
       context: .
       dockerfile: DockerFile
     container_name: python-postgres-app
+    volumes:
+      - .:/app
     depends_on:
       - db
     environment:
