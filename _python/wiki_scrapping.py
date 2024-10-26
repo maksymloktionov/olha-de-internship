@@ -3,101 +3,92 @@ import requests
 import pandas as pd
 import numpy as np
 from sqlalchemy import create_engine
-import numpy as np
 import os
 import logging
 
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',level=logging.INFO)
 
-class Wiki_ParseWar:
-    #this is an instance method
-    def __init__(self,url):
-        self.url = url
-        logging.info('Database connetion was establish successfully')
-    
+class WikiParser:
+    def __init__(self, table_index=8):
+        self.url = "https://en.wikipedia.org/wiki/List_of_wars_involving_Russia#Russian_Federation_(1991%E2%80%93present)"
+        self.table_index = table_index
+        logging.info('WikiParser instance is created')
+
     @staticmethod
-    def get_Page(url):
+    def get_page(url):
         try:
             page = requests.get(url)
-            soup = BeautifulSoup(page.text,'html')
-            return soup
+            page.raise_for_status()
+            return BeautifulSoup(page.text, 'html.parser')
         except requests.RequestException as e:
-            logging.error (f'Error fetching page {e}')
+            logging.error(f'Error fetching page: {e}')
             return None
-    
-    def get_Tables(self,soup):
-        
-        return soup.find_all('table',class_='wikitable')
-    
-    def parse_tables(self,soup,table_index):
-        tables = self.get_Tables(soup)
-        rus_fed_table = tables[table_index]
 
+    @staticmethod
+    def get_tables(soup):
+        return soup.find_all('table', class_='wikitable')
+
+    def parse_tables(self, soup):
+        tables = self.get_tables(soup)
+        if self.table_index >= len(tables):
+            logging.error(f'Table at index {self.table_index} not found.')
+            return pd.DataFrame()
+
+        rus_fed_table = tables[self.table_index]
         headers = self.extract_headers(rus_fed_table)
-        data = []
+        data = [self.parse_row(row) for row in rus_fed_table.find_all('tr')[1:]]
 
-        column_data = rus_fed_table.find_all('tr')
-        for row in column_data[1:]:
-            row_data = self.parse_row(row)
-            data.append(row_data)
-            
-        self.df = pd.DataFrame(data,columns=headers)
-        return self.df
-    
-    def extract_headers(self,table):
+        return pd.DataFrame(data, columns=headers)
+
+    @staticmethod
+    def extract_headers(table):
         headers = [header.get_text(strip=True) for header in table.find_all('th')]
-        logging.info(f'Parsed headers:{headers}')
+        logging.info(f'Parsed headers: {headers}')
         return headers
 
-    def parse_row(self,row):
-        row_data = row.find_all('td')
-        each_row = [data.text.strip() for data in row_data]
-        return each_row
-    
+    @staticmethod
+    def parse_row(row):
+        return [data.text.strip() for data in row.find_all('td')]
 
-    def pd_Clean(self):
-       logging.info('Cleaning data')
-       
-       self.df[["Start date","End date"]] = self.df["Date"].str.split("–",n=1,expand=True)
-       self.df.replace({np.nan:None},inplace=True)
-       self.df.columns = self.df.columns.str.replace(' ','_').str.lower()
-       self.df['end_date'] = self.df['end_date'].replace(['present',"present[49]","present[50]" ,'None', pd.NA, np.nan], np.nan)
-       
-       logging.info('Finished cleaning data')
+    @staticmethod
+    def clean_data(df):
+        logging.info('Cleaning data')
 
-    #def csv_Save(self,csv_path):
-     #   logging.info(f"Saving data to CSV: {csv_path}")
-      #  self.df.to_csv(csv_path,index=False)  
-       # logging.info('Saved')
+        df[["start_date", "end_date"]] = df["Date"].str.split("–", n=1, expand=True)
+        df['start_date'] = pd.to_datetime(df['start_date'], errors='coerce')
+        df['end_date'] = pd.to_datetime(df['end_date'].replace(['present', "present[49]", "present[50]", None], np.nan),
+                                        errors='coerce')
 
-    def db_Con(self, table_name):
+        df.columns = df.columns.str.replace(' ', '_').str.lower()
+
+        logging.info('Finished cleaning data')
+        return df
+
+    @staticmethod
+    def save_to_db(df, table_name):
         logging.info(f'Saving data to database: {table_name}')
         database_url = os.getenv('DATABASE_URL')
         if not database_url:
             logging.error('DATABASE_URL is not set.')
-            return 
-        try:
-            engine = create_engine(database_url)
-            self.df.to_sql(
-                name=table_name,
-                con=engine,
-                if_exists="append",
-                index=False
-            )
-            logging.info('Saved')
-        except Exception as e:
-            logging.error(f'Error saving to database:{e}')
+            return
 
-   
-    def run(self,table_index,table_name):
-        soup = self.get_Page(self.url)
+        try:
+            with create_engine(database_url).connect() as connection:
+                df.to_sql(name=table_name, con=connection, if_exists="replace", index=False)
+            logging.info('Data saved successfully')
+        except Exception as e:
+            logging.error(f'Error saving to database: {e}')
+
+    def run(self, table_name):
+        soup = self.get_page(self.url)
         if soup:
-            self.parse_tables(soup,table_index)
-            self.pd_Clean()
-           # self.csv_Save(csv_path)
-            self.db_Con(table_name)
+            df = self.parse_tables(soup)
+            if not df.empty:
+                cleaned_df = self.clean_data(df)
+                self.save_to_db(cleaned_df, table_name)
+
+
 if __name__ == "__main__":
-    url = 'https://en.wikipedia.org/wiki/List_of_wars_involving_Russia#Russian_Federation_(1991%E2%80%93present'
-    scraper = Wiki_ParseWar(url)   
-    scraper.run(table_index=8,table_name='warcrimes')
+    scraper = WikiParser()
+    scraper.run(table_name='war_crimes')
