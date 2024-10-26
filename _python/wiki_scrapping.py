@@ -56,14 +56,14 @@ class WikiParser:
         return each_row
 
     def clean_data(self):
-       logging.info('Cleaning data')
+        logging.info('Cleaning data')
        
-       self.df[["Start date","End date"]] = self.df["Date"].str.split("–",n=1,expand=True)
-       self.df.replace({np.nan:None},inplace=True)
-       self.df.columns = self.df.columns.str.replace(' ','_').str.lower()
-       self.df['end_date'] = self.df['end_date'].replace(['present',"present[49]","present[50]" ,'None', pd.NA, np.nan], np.nan)
+        self.df[["Start date","End date"]] = self.df["Date"].str.split("–",n=1,expand=True)
+        self.df.replace({np.nan:None},inplace=True)
+        self.df.columns = self.df.columns.str.replace(' ','_').str.lower()
+        self.df['end_date'] = self.df['end_date'].replace(['present',"present[49]","present[50]" ,'None', pd.NA, np.nan], np.nan)
        
-       logging.info('Finished cleaning data')
+        logging.info('Finished cleaning data')
 
 
     def save_to_db(self, table_name):
