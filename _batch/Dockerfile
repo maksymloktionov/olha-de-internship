@@ -20,4 +20,3 @@ RUN pip install kagglehub
 
 COPY . .
 
-#CMD ["python", "./spark.py"]
