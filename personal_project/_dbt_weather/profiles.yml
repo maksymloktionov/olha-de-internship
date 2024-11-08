@@ -1,0 +1,13 @@
+weather_analysis:
+  outputs:
+    dev:
+      account: qzcrtyv-cr51063
+      database: DATA_ANALYTICS
+      password: Poli2806AA
+      role: dbt_transform
+      schema: public
+      threads: 8
+      type: snowflake
+      user: olha
+      warehouse: dbt_weather
+  target: dev
