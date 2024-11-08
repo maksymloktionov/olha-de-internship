@@ -5,7 +5,7 @@ weather_analysis:
       database: DATA_ANALYTICS
       password: Poli2806AA
       role: dbt_transform
-      schema: public
+      schema: transformations
       threads: 8
       type: snowflake
       user: olha
