@@ -11,6 +11,7 @@ sources:
     - name: stg_munich_data
     - name: stg_zagreb_data
     - name: stg_oslo_data
+    - name: stg_countries_details
 
 
 
