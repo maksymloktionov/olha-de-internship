@@ -22,8 +22,7 @@ SELECT
 
 FROM {{source('landing','stg_paris_data')}}
 
-
 {% if is_incremental() %}
-    where "date"::date >= (select coalesce (max("date"::date),'1970-01-01'::date) from {{this}})
+    where date::date >= (select coalesce (max(date::date),'1970-01-01'::date) from {{this}})
 
 {% endif %}
