@@ -22,7 +22,6 @@ SELECT
 
 FROM {{source('landing','stg_oslo_data')}}
 
-
 {% if is_incremental() %}
     where date::date >= (select coalesce (max(date::date),'1970-01-01'::date) from {{this}})
 

@@ -1,9 +1,9 @@
 version 2:
 
 sources:
-  - name: landing
-    database: landing
-    schema: raw
+  - name: transform
+    database: data_analytics
+    schema: transformations
     tables:
       - name: stg_kyiv_data
       - name: stg_paris_data

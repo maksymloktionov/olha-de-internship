@@ -1,3 +1,10 @@
+{{
+    config (
+        materialized = 'incremental',
+        unique_key = "date"
+    )
+}}
+
 
 SELECT 
     1 as city_id,
