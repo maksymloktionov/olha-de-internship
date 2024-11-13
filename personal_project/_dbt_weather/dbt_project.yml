@@ -8,6 +8,8 @@ config-version: 2
 
 profile: weather_analysis
 
+vars:
+    "dbt_date:time_zone": "Europe/Paris"
 #sources:
  # _dbt_weather:
   #  +enabled: true
@@ -20,3 +22,4 @@ models:
         +materialized: table  
       intermediate: 
         +materialized: view
+    

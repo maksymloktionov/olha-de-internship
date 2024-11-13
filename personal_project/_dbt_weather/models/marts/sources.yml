@@ -5,12 +5,8 @@ sources:
     database: landing
     schema: raw
     tables:
-      - name: stg_kyiv_data
-      - name: stg_paris_data
-      - name: stg_munich_data
-      - name: stg_zagreb_data
-      - name: stg_oslo_data
+      - name: stg_cities
       - name: stg_countries_details
-
+     
 
 
