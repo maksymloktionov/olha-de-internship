@@ -12,10 +12,5 @@ services:
     environment:
       JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
       PATH: $JAVA_HOME/bin:$PATH
-    command: >
-      /usr/local/bin/spark-submit
-      --master local[*] 
-      --driver-memory 8g 
-      /usr/src/app/spark.py
-      
+   # command: ["python", "./spark.py"] 
     tty: true

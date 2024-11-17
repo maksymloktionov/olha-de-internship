@@ -4,9 +4,10 @@ from pyspark.sql import DataFrame
 from pyspark import SparkConf
 from pyspark.sql.types import StringType,IntegerType
 from pyspark.sql.functions import col, count, isnan, when,desc,expr
+#import time
+#import pycountry
 import kagglehub
 import logging
-import time 
 
 # Download the dataset
 path = kagglehub.dataset_download("ashpalsingh1525/imdb-movies-dataset")
@@ -17,7 +18,6 @@ def create_spark_session() -> SparkSession:
     conf = SparkConf()\
         .set("spark.driver.memory", "8g")\
         .set("spark.ui.port", "4040")
-    
     spark = SparkSession \
         .builder \
         .master("local") \
@@ -27,8 +27,8 @@ def create_spark_session() -> SparkSession:
 
     # Set the logging level for Spark
     spark.sparkContext.setLogLevel("WARN")  
-    logging.info('Spark session was created')
 
+    logging.info('Spark session was created')
     return spark
 
 def read_data(spark: SparkSession, path: str) -> DataFrame:
@@ -55,16 +55,25 @@ def rename_columns(data_df: DataFrame) -> DataFrame:
         
 def check_null_values(data_df: DataFrame) -> None:
     logging.info('Checking for null values in dataset')
+    data_df.createOrReplaceTempView("data")
     null_values = data_df.select([count(when(isnan(c) | col(c).isNull(), c)).alias(c) for c in data_df.columns])
     null_values.show()
     return null_values
 
 def delete_null_values(data_df: DataFrame) -> DataFrame:
-    cleaned_df = data_df.na.drop().dropDuplicates()
+    null_dropped = data_df.na.drop()
+    cleaned_df = null_dropped.dropDuplicates()
     logging.info('Removed null values')
 
     cleaned_df = cleaned_df.filter(~col('Country').cast('string').rlike('^[0-9]*\.?[0-9]+$'))
     return cleaned_df
+
+#def get_country_name(country_code):
+ #   try:
+  #      return pycountry.countries.get(alpha_2 = country_code).name
+   # except:
+    #    return None
+#country_name_udf = udf(get_country_name,StringType())
 
 
 def top_10_movie(data_df:DataFrame) -> DataFrame:
@@ -72,7 +81,7 @@ def top_10_movie(data_df:DataFrame) -> DataFrame:
     
 
 def save_to_csv(data_df: DataFrame, output_path: str) -> None:
-    data_df.write.mode('overwrite').option('header','True').csv(output_path)
+    data_df.write.options(mode='overwrite',header='True').csv(output_path)
     logging.info(f'Saved DataFrame to CSV at {output_path}')
 
 
@@ -83,22 +92,27 @@ if __name__ == '__main__':
     
     if data_df is not None:
         data_df = rename_columns(data_df)
+
+        #data_df = data_df.withColumn("Country",country_name_udf(col("Country")))
         data_df.show()
         check_null_values(data_df)
         data_df = delete_null_values(data_df)
+       # data_df.show()
+
+        #data_df = analyze_data(data_df)
+        #data_df.show()
+
         top_10_df = top_10_movie(data_df)
-        print('Top 10 movies according to IMDB')
         top_10_df.select(
             expr("substring(Movie_name, 1, 50) AS Movie_name"),  # Show first 50 characters of Movie_name
             col('User_rating').cast('int').alias('User_rating'),
             'Genre',
             'Country'
         ).show(truncate=False) 
-
         csv_output_path = '/usr/src/app/imdb.csv'
         save_to_csv(data_df,csv_output_path)
 
 
-     #For UI to stick
-time.sleep(1000)
-spark.stop()
+        #data_df.select(['names', 'score', 'country']).show(20, truncate=False)
+    # For UI to stick
+    #time.sleep(1000)
