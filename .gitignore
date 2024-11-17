@@ -4,3 +4,5 @@ logs/
 _dbt/.user.yml
 _dbt/logs
 .github/
+.venv/
+!.venv/snowpark.py
