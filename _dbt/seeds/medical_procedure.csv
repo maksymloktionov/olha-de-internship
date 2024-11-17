@@ -1,0 +1,1001 @@
+ProcedureID,ProcedureName,AppointmentID,created_at
+574,Allergy testing,701,2024-10-22 19:28:54.615
+432,Kidney transplant,955,2024-10-22 19:28:54.615
+854,Psychotherapy,363,2024-10-22 19:28:54.615
+818,Emotional and spiritual support,959,2024-10-22 19:28:54.615
+672,Hormone replacement therapy,439,2024-10-22 19:28:54.615
+869,Coronary artery bypass surgery,805,2024-10-22 19:28:54.615
+902,Thyroid biopsy,862,2024-10-22 19:28:54.615
+434,Angioplasty and stent placement,885,2024-10-22 19:28:54.615
+622,Surgical oncology,305,2024-10-22 19:28:54.615
+906,Advanced cardiac life support,219,2024-10-22 19:28:54.615
+580,Kidney transplant,202,2024-10-22 19:28:54.615
+122,Tonsillectomy and adenoidectomy,692,2024-10-22 19:28:54.615
+208,Symptom management for end-of-life care,740,2024-10-22 19:28:54.615
+596,Sedation for minor procedures,870,2024-10-22 19:28:54.615
+838,Allergy testing,313,2024-10-22 19:28:54.615
+402,Insulin pump management for diabetes,141,2024-10-22 19:28:54.615
+281,General health check-ups,800,2024-10-22 19:28:54.615
+954,Allergy testing,168,2024-10-22 19:28:54.615
+130,Surgical oncology,272,2024-10-22 19:28:54.615
+559,Interventional radiology procedures,289,2024-10-22 19:28:54.615
+442,Cataract surgery,139,2024-10-22 19:28:54.615
+223,Psychotherapy,123,2024-10-22 19:28:54.615
+638,Allergy testing,296,2024-10-22 19:28:54.615
+765,Laser therapy for skin conditions,810,2024-10-22 19:28:54.615
+477,Emergency surgical procedures,661,2024-10-22 19:28:54.615
+455,Sedation for minor procedures,616,2024-10-22 19:28:54.615
+84,Lumbar puncture,690,2024-10-22 19:28:54.615
+877,Cochlear implant surgery,989,2024-10-22 19:28:54.615
+574,Interventional radiology procedures,115,2024-10-22 19:28:54.615
+821,General health check-ups,408,2024-10-22 19:28:54.615
+173,Endoscopy,926,2024-10-22 19:28:54.615
+492,Immunizations,478,2024-10-22 19:28:54.615
+1000,Pacemaker implantation,974,2024-10-22 19:28:54.615
+702,Plastic surgery,343,2024-10-22 19:28:54.615
+88,Laser therapy for skin conditions,126,2024-10-22 19:28:54.615
+823,"X-rays, CT scans, MRI scans",466,2024-10-22 19:28:54.615
+375,General surgery,984,2024-10-22 19:28:54.615
+616,Thyroid biopsy,459,2024-10-22 19:28:54.615
+173,LASIK eye surgery,829,2024-10-22 19:28:54.615
+582,Orthopedic surgery,363,2024-10-22 19:28:54.615
+297,Hemodynamic monitoring,935,2024-10-22 19:28:54.615
+959,Sedation for minor procedures,833,2024-10-22 19:28:54.615
+360,Kidney transplant,377,2024-10-22 19:28:54.615
+818,Intensive care management,254,2024-10-22 19:28:54.615
+882,Insulin pump management for diabetes,633,2024-10-22 19:28:54.615
+949,Minor surgical procedures,499,2024-10-22 19:28:54.615
+345,Minor surgical procedures,575,2024-10-22 19:28:54.615
+823,Immunizations,268,2024-10-22 19:28:54.615
+290,Sedation for minor procedures,199,2024-10-22 19:28:54.615
+557,Advanced cardiac life support,882,2024-10-22 19:28:54.615
+332,Emergency surgical procedures,539,2024-10-22 19:28:54.615
+487,Rhinoplasty,429,2024-10-22 19:28:54.615
+941,Dementia care,983,2024-10-22 19:28:54.615
+381,"Cosmetic procedures (e.g., Botox, fillers)",979,2024-10-22 19:28:54.615
+835,Well-child check-ups,860,2024-10-22 19:28:54.615
+582,Lumbar puncture,776,2024-10-22 19:28:54.615
+470,Intensive care management,227,2024-10-22 19:28:54.615
+243,Insulin pump management for diabetes,797,2024-10-22 19:28:54.615
+669,Immunotherapy (allergy shots),228,2024-10-22 19:28:54.615
+696,Retinal surgery,926,2024-10-22 19:28:54.615
+381,General surgery,154,2024-10-22 19:28:54.615
+670,Radiation therapy,650,2024-10-22 19:28:54.615
+345,Trauma resuscitation,661,2024-10-22 19:28:54.615
+774,Comprehensive geriatric assessment,532,2024-10-22 19:28:54.615
+257,General health check-ups,440,2024-10-22 19:28:54.615
+913,Dermatologic surgery,465,2024-10-22 19:28:54.615
+103,Thyroid biopsy,305,2024-10-22 19:28:54.615
+464,"X-rays, CT scans, MRI scans",480,2024-10-22 19:28:54.615
+54,Immunotherapy (allergy shots),410,2024-10-22 19:28:54.615
+795,Orthopedic surgery,473,2024-10-22 19:28:54.615
+675,Symptom management for end-of-life care,392,2024-10-22 19:28:54.615
+476,Sedation for minor procedures,372,2024-10-22 19:28:54.615
+339,Immunizations,981,2024-10-22 19:28:54.615
+83,"X-rays, CT scans, MRI scans",362,2024-10-22 19:28:54.615
+341,Allergy testing,198,2024-10-22 19:28:54.615
+564,General anesthesia for surgeries,458,2024-10-22 19:28:54.615
+973,Cataract surgery,643,2024-10-22 19:28:54.615
+994,Rhinoplasty,824,2024-10-22 19:28:54.615
+74,General anesthesia for surgeries,648,2024-10-22 19:28:54.615
+733,Advanced cardiac life support,190,2024-10-22 19:28:54.615
+454,Well-child check-ups,383,2024-10-22 19:28:54.615
+670,Laser therapy for skin conditions,654,2024-10-22 19:28:54.615
+436,Comprehensive geriatric assessment,403,2024-10-22 19:28:54.615
+119,Coronary artery bypass surgery,481,2024-10-22 19:28:54.615
+754,Mechanical ventilation,574,2024-10-22 19:28:54.615
+697,Cataract surgery,984,2024-10-22 19:28:54.615
+470,Tonsillectomy and adenoidectomy,314,2024-10-22 19:28:54.615
+62,Sedation for minor procedures,456,2024-10-22 19:28:54.615
+144,Medication management,160,2024-10-22 19:28:54.615
+688,Endoscopy,218,2024-10-22 19:28:54.615
+495,Surgical oncology,188,2024-10-22 19:28:54.615
+346,Advanced cardiac life support,713,2024-10-22 19:28:54.615
+95,Pacemaker implantation,547,2024-10-22 19:28:54.615
+831,Lumbar puncture,589,2024-10-22 19:28:54.615
+434,Well-child check-ups,701,2024-10-22 19:28:54.615
+776,Cochlear implant surgery,693,2024-10-22 19:28:54.615
+497,Interventional radiology procedures,991,2024-10-22 19:28:54.615
+841,Comprehensive geriatric assessment,270,2024-10-22 19:28:54.615
+712,Chronic disease management,362,2024-10-22 19:28:54.615
+409,Epidural anesthesia for pain management,360,2024-10-22 19:28:54.615
+88,Rhinoplasty,353,2024-10-22 19:28:54.615
+479,Dialysis,164,2024-10-22 19:28:54.615
+638,Plastic surgery,840,2024-10-22 19:28:54.615
+878,"X-rays, CT scans, MRI scans",666,2024-10-22 19:28:54.615
+866,Sedation for minor procedures,990,2024-10-22 19:28:54.615
+137,Dialysis,262,2024-10-22 19:28:54.615
+577,MRI for brain imaging,801,2024-10-22 19:28:54.615
+989,Hemodynamic monitoring,812,2024-10-22 19:28:54.615
+441,Nephrectomy,811,2024-10-22 19:28:54.615
+842,Chemotherapy,524,2024-10-22 19:28:54.615
+352,Thyroid biopsy,662,2024-10-22 19:28:54.615
+186,Lumbar puncture,236,2024-10-22 19:28:54.615
+253,Medication management,251,2024-10-22 19:28:54.615
+145,Sedation for minor procedures,462,2024-10-22 19:28:54.615
+858,Cataract surgery,517,2024-10-22 19:28:54.615
+736,Dermatologic surgery,278,2024-10-22 19:28:54.615
+223,Liver biopsy,534,2024-10-22 19:28:54.615
+639,Anesthetic care during childbirth,773,2024-10-22 19:28:54.615
+689,General surgery,199,2024-10-22 19:28:54.615
+411,Nephrectomy,251,2024-10-22 19:28:54.615
+176,"X-rays, CT scans, MRI scans",480,2024-10-22 19:28:54.615
+142,Chemotherapy,207,2024-10-22 19:28:54.615
+490,Anesthetic care during childbirth,611,2024-10-22 19:28:54.615
+775,Chemotherapy,316,2024-10-22 19:28:54.615
+271,Intensive care management,333,2024-10-22 19:28:54.615
+697,Chronic disease management,206,2024-10-22 19:28:54.615
+473,Immunotherapy (allergy shots),494,2024-10-22 19:28:54.615
+128,"X-rays, CT scans, MRI scans",589,2024-10-22 19:28:54.615
+439,EEG (Electroencephalogram),628,2024-10-22 19:28:54.615
+163,Cochlear implant surgery,999,2024-10-22 19:28:54.615
+228,Electroconvulsive therapy (ECT),872,2024-10-22 19:28:54.615
+946,Chemotherapy,254,2024-10-22 19:28:54.615
+229,Epidural analgesia during labor,526,2024-10-22 19:28:54.615
+117,Laser therapy for skin conditions,800,2024-10-22 19:28:54.615
+797,Intensive care management,312,2024-10-22 19:28:54.615
+400,General health check-ups,473,2024-10-22 19:28:54.615
+952,Comprehensive geriatric assessment,681,2024-10-22 19:28:54.615
+654,Pediatric surgery,525,2024-10-22 19:28:54.615
+221,"X-rays, CT scans, MRI scans",861,2024-10-22 19:28:54.615
+825,Psychotherapy,276,2024-10-22 19:28:54.615
+913,"X-rays, CT scans, MRI scans",156,2024-10-22 19:28:54.615
+760,Sedation for minor procedures,111,2024-10-22 19:28:54.615
+736,Dermatologic surgery,491,2024-10-22 19:28:54.615
+110,Colonoscopy,103,2024-10-22 19:28:54.615
+665,Retinal surgery,191,2024-10-22 19:28:54.615
+623,Hormone replacement therapy,639,2024-10-22 19:28:54.615
+726,Rhinoplasty,185,2024-10-22 19:28:54.615
+787,Angioplasty and stent placement,507,2024-10-22 19:28:54.615
+209,Psychotherapy,212,2024-10-22 19:28:54.615
+925,Coronary artery bypass surgery,348,2024-10-22 19:28:54.615
+546,General anesthesia for surgeries,124,2024-10-22 19:28:54.615
+460,Epidural analgesia during labor,208,2024-10-22 19:28:54.615
+67,Radiation therapy,998,2024-10-22 19:28:54.615
+756,Interventional radiology procedures,141,2024-10-22 19:28:54.615
+985,Minor surgical procedures,145,2024-10-22 19:28:54.615
+423,Dementia care,593,2024-10-22 19:28:54.615
+601,Chronic disease management,302,2024-10-22 19:28:54.615
+194,Pacemaker implantation,881,2024-10-22 19:28:54.615
+728,Liver biopsy,470,2024-10-22 19:28:54.615
+987,Emergency surgical procedures,513,2024-10-22 19:28:54.615
+320,Laser therapy for skin conditions,360,2024-10-22 19:28:54.615
+101,General anesthesia for surgeries,948,2024-10-22 19:28:54.615
+381,Pacemaker implantation,971,2024-10-22 19:28:54.615
+329,Coronary artery bypass surgery,994,2024-10-22 19:28:54.615
+968,Advanced cardiac life support,448,2024-10-22 19:28:54.615
+994,Emotional and spiritual support,895,2024-10-22 19:28:54.615
+673,Radiation therapy,238,2024-10-22 19:28:54.615
+816,Anesthetic care during childbirth,609,2024-10-22 19:28:54.615
+755,Electroconvulsive therapy (ECT),366,2024-10-22 19:28:54.615
+656,General surgery,134,2024-10-22 19:28:54.615
+534,Coronary artery bypass surgery,446,2024-10-22 19:28:54.615
+210,General health check-ups,363,2024-10-22 19:28:54.615
+800,Comprehensive geriatric assessment,140,2024-10-22 19:28:54.615
+212,Mechanical ventilation,506,2024-10-22 19:28:54.615
+933,Anesthetic care during childbirth,568,2024-10-22 19:28:54.615
+442,Well-child check-ups,846,2024-10-22 19:28:54.615
+167,Endoscopy,581,2024-10-22 19:28:54.615
+952,Rhinoplasty,896,2024-10-22 19:28:54.615
+525,Medication management,620,2024-10-22 19:28:54.615
+236,Chemotherapy,736,2024-10-22 19:28:54.615
+659,Laser therapy for skin conditions,280,2024-10-22 19:28:54.615
+471,Allergy testing,121,2024-10-22 19:28:54.615
+394,Polypharmacy management,291,2024-10-22 19:28:54.615
+798,Polypharmacy management,337,2024-10-22 19:28:54.615
+461,Endoscopy,534,2024-10-22 19:28:54.615
+108,Cataract surgery,478,2024-10-22 19:28:54.615
+863,Chemotherapy,620,2024-10-22 19:28:54.615
+881,Advanced cardiac life support,865,2024-10-22 19:28:54.615
+566,Hemodynamic monitoring,955,2024-10-22 19:28:54.615
+663,Allergy testing,208,2024-10-22 19:28:54.615
+832,MRI for brain imaging,333,2024-10-22 19:28:54.615
+584,Epidural analgesia during labor,637,2024-10-22 19:28:54.615
+271,Well-child check-ups,851,2024-10-22 19:28:54.615
+687,LASIK eye surgery,132,2024-10-22 19:28:54.615
+767,Surgical oncology,579,2024-10-22 19:28:54.615
+758,General anesthesia for surgeries,405,2024-10-22 19:28:54.615
+623,Chemotherapy,210,2024-10-22 19:28:54.615
+264,Colonoscopy,583,2024-10-22 19:28:54.615
+504,Hormone replacement therapy,756,2024-10-22 19:28:54.615
+587,Retinal surgery,375,2024-10-22 19:28:54.615
+746,Hemodynamic monitoring,658,2024-10-22 19:28:54.615
+598,Trauma resuscitation,648,2024-10-22 19:28:54.615
+421,Well-child check-ups,223,2024-10-22 19:28:54.615
+710,General health check-ups,991,2024-10-22 19:28:54.615
+832,Dermatologic surgery,525,2024-10-22 19:28:54.615
+604,Minor surgical procedures,526,2024-10-22 19:28:54.615
+995,Allergy testing,349,2024-10-22 19:28:54.615
+186,Endoscopy,647,2024-10-22 19:28:54.615
+946,Orthopedic surgery,988,2024-10-22 19:28:54.615
+879,Thyroid biopsy,530,2024-10-22 19:28:54.615
+152,Immunotherapy (allergy shots),363,2024-10-22 19:28:54.615
+875,Trauma resuscitation,813,2024-10-22 19:28:54.615
+302,Chronic disease management,462,2024-10-22 19:28:54.615
+259,Angioplasty and stent placement,344,2024-10-22 19:28:54.615
+276,"X-rays, CT scans, MRI scans",494,2024-10-22 19:28:54.615
+58,Epidural anesthesia for pain management,339,2024-10-22 19:28:54.615
+851,LASIK eye surgery,177,2024-10-22 19:28:54.615
+381,Intensive care management,756,2024-10-22 19:28:54.615
+315,Immunizations,402,2024-10-22 19:28:54.615
+585,Immunizations,140,2024-10-22 19:28:54.615
+525,Minor surgical procedures,131,2024-10-22 19:28:54.615
+717,EEG (Electroencephalogram),918,2024-10-22 19:28:54.615
+930,Dermatologic surgery,651,2024-10-22 19:28:54.615
+548,Chronic disease management,937,2024-10-22 19:28:54.615
+323,Dialysis,209,2024-10-22 19:28:54.615
+533,"Cosmetic procedures (e.g., Botox, fillers)",465,2024-10-22 19:28:54.615
+167,Coronary artery bypass surgery,799,2024-10-22 19:28:54.615
+863,Surgical oncology,272,2024-10-22 19:28:54.615
+384,Intensive care management,215,2024-10-22 19:28:54.615
+997,Minor surgical procedures,209,2024-10-22 19:28:54.615
+516,Laser therapy for skin conditions,725,2024-10-22 19:28:54.615
+768,Cataract surgery,680,2024-10-22 19:28:54.615
+695,Anesthetic care during childbirth,352,2024-10-22 19:28:54.615
+703,"X-rays, CT scans, MRI scans",976,2024-10-22 19:28:54.615
+781,Pediatric surgery,392,2024-10-22 19:28:54.615
+449,Colonoscopy,920,2024-10-22 19:28:54.615
+109,Hormone replacement therapy,877,2024-10-22 19:28:54.615
+523,Medication management,640,2024-10-22 19:28:54.615
+504,Chemotherapy,273,2024-10-22 19:28:54.615
+867,Surgical oncology,719,2024-10-22 19:28:54.615
+966,Angioplasty and stent placement,178,2024-10-22 19:28:54.615
+261,Well-child check-ups,585,2024-10-22 19:28:54.615
+252,Immunizations,228,2024-10-22 19:28:54.615
+280,Symptom management for end-of-life care,359,2024-10-22 19:28:54.615
+880,Endoscopy,711,2024-10-22 19:28:54.615
+870,Surgical oncology,102,2024-10-22 19:28:54.615
+881,Interventional radiology procedures,634,2024-10-22 19:28:54.615
+359,Immunotherapy (allergy shots),748,2024-10-22 19:28:54.615
+943,Angioplasty and stent placement,442,2024-10-22 19:28:54.615
+934,Laser therapy for skin conditions,959,2024-10-22 19:28:54.615
+871,Kidney transplant,747,2024-10-22 19:28:54.615
+862,LASIK eye surgery,593,2024-10-22 19:28:54.615
+366,Liver biopsy,236,2024-10-22 19:28:54.615
+743,Pacemaker implantation,308,2024-10-22 19:28:54.615
+309,Well-child check-ups,717,2024-10-22 19:28:54.615
+109,Immunotherapy (allergy shots),482,2024-10-22 19:28:54.615
+464,Kidney transplant,919,2024-10-22 19:28:54.615
+555,Thyroid biopsy,707,2024-10-22 19:28:54.615
+281,General surgery,167,2024-10-22 19:28:54.615
+238,Plastic surgery,982,2024-10-22 19:28:54.615
+471,Medication management,645,2024-10-22 19:28:54.615
+557,MRI for brain imaging,175,2024-10-22 19:28:54.615
+518,Advanced cardiac life support,923,2024-10-22 19:28:54.615
+745,"Cosmetic procedures (e.g., Botox, fillers)",197,2024-10-22 19:28:54.615
+258,Well-child check-ups,227,2024-10-22 19:28:54.615
+404,Radiation therapy,990,2024-10-22 19:28:54.615
+991,Surgical oncology,555,2024-10-22 19:28:54.615
+872,Interventional radiology procedures,750,2024-10-22 19:28:54.615
+174,Liver biopsy,681,2024-10-22 19:28:54.615
+268,General anesthesia for surgeries,287,2024-10-22 19:28:54.615
+626,Plastic surgery,700,2024-10-22 19:28:54.615
+890,Plastic surgery,699,2024-10-22 19:28:54.615
+135,Sedation for minor procedures,227,2024-10-22 19:28:54.615
+727,Dermatologic surgery,545,2024-10-22 19:28:54.615
+194,Tonsillectomy and adenoidectomy,222,2024-10-22 19:28:54.615
+777,General anesthesia for surgeries,154,2024-10-22 19:28:54.615
+754,General anesthesia for surgeries,264,2024-10-22 19:28:54.615
+182,Immunizations,364,2024-10-22 19:28:54.615
+649,Dementia care,783,2024-10-22 19:28:54.615
+802,Plastic surgery,914,2024-10-22 19:28:54.615
+471,Epidural analgesia during labor,197,2024-10-22 19:28:54.615
+100,Hemodynamic monitoring,277,2024-10-22 19:28:54.615
+492,Pediatric surgery,947,2024-10-22 19:28:54.615
+257,Cochlear implant surgery,233,2024-10-22 19:28:54.615
+617,Interventional radiology procedures,308,2024-10-22 19:28:54.615
+122,Nephrectomy,238,2024-10-22 19:28:54.615
+671,Cataract surgery,853,2024-10-22 19:28:54.615
+680,Laser therapy for skin conditions,211,2024-10-22 19:28:54.615
+531,Liver biopsy,1000,2024-10-22 19:28:54.615
+62,Allergy testing,918,2024-10-22 19:28:54.615
+572,"Cosmetic procedures (e.g., Botox, fillers)",607,2024-10-22 19:28:54.615
+388,Angioplasty and stent placement,417,2024-10-22 19:28:54.615
+50,Laser therapy for skin conditions,258,2024-10-22 19:28:54.615
+376,Dementia care,381,2024-10-22 19:28:54.615
+146,Comprehensive geriatric assessment,350,2024-10-22 19:28:54.615
+322,LASIK eye surgery,883,2024-10-22 19:28:54.615
+144,Endoscopy,227,2024-10-22 19:28:54.615
+240,Plastic surgery,811,2024-10-22 19:28:54.615
+474,Dialysis,120,2024-10-22 19:28:54.615
+721,Epidural anesthesia for pain management,913,2024-10-22 19:28:54.615
+559,Allergy testing,637,2024-10-22 19:28:54.615
+256,Cochlear implant surgery,985,2024-10-22 19:28:54.615
+54,Immunotherapy (allergy shots),692,2024-10-22 19:28:54.615
+976,Tonsillectomy and adenoidectomy,538,2024-10-22 19:28:54.615
+870,Electroconvulsive therapy (ECT),137,2024-10-22 19:28:54.615
+325,Dementia care,459,2024-10-22 19:28:54.615
+64,Laser therapy for skin conditions,130,2024-10-22 19:28:54.615
+732,Allergy testing,190,2024-10-22 19:28:54.615
+559,Chemotherapy,520,2024-10-22 19:28:54.615
+285,Allergy testing,390,2024-10-22 19:28:54.615
+962,Anesthetic care during childbirth,654,2024-10-22 19:28:54.615
+560,Plastic surgery,593,2024-10-22 19:28:54.615
+457,Electroconvulsive therapy (ECT),787,2024-10-22 19:28:54.615
+218,Colonoscopy,524,2024-10-22 19:28:54.615
+416,Pacemaker implantation,834,2024-10-22 19:28:54.615
+930,Interventional radiology procedures,450,2024-10-22 19:28:54.615
+165,Tonsillectomy and adenoidectomy,632,2024-10-22 19:28:54.615
+832,Immunizations,183,2024-10-22 19:28:54.615
+995,Psychotherapy,893,2024-10-22 19:28:54.615
+683,Trauma resuscitation,116,2024-10-22 19:28:54.615
+548,Kidney transplant,454,2024-10-22 19:28:54.615
+844,Nephrectomy,931,2024-10-22 19:28:54.615
+144,Hemodynamic monitoring,934,2024-10-22 19:28:54.615
+886,Plastic surgery,167,2024-10-22 19:28:54.615
+443,Rhinoplasty,913,2024-10-22 19:28:54.615
+563,Pediatric surgery,798,2024-10-22 19:28:54.615
+638,Insulin pump management for diabetes,674,2024-10-22 19:28:54.615
+231,Immunotherapy (allergy shots),882,2024-10-22 19:28:54.615
+774,Retinal surgery,590,2024-10-22 19:28:54.615
+362,Epidural analgesia during labor,951,2024-10-22 19:28:54.615
+608,Endoscopy,152,2024-10-22 19:28:54.615
+540,Intensive care management,877,2024-10-22 19:28:54.615
+223,Hormone replacement therapy,830,2024-10-22 19:28:54.615
+961,Cataract surgery,698,2024-10-22 19:28:54.615
+914,Emergency surgical procedures,196,2024-10-22 19:28:54.615
+360,Lumbar puncture,502,2024-10-22 19:28:54.615
+819,Dementia care,974,2024-10-22 19:28:54.615
+186,EEG (Electroencephalogram),230,2024-10-22 19:28:54.615
+144,Advanced cardiac life support,994,2024-10-22 19:28:54.615
+315,General surgery,905,2024-10-22 19:28:54.615
+550,Immunotherapy (allergy shots),310,2024-10-22 19:28:54.615
+699,Insulin pump management for diabetes,804,2024-10-22 19:28:54.615
+671,Surgical oncology,840,2024-10-22 19:28:54.615
+610,"X-rays, CT scans, MRI scans",494,2024-10-22 19:28:54.615
+782,Cochlear implant surgery,545,2024-10-22 19:28:54.615
+348,Allergy testing,663,2024-10-22 19:28:54.615
+962,LASIK eye surgery,215,2024-10-22 19:28:54.615
+258,Trauma resuscitation,463,2024-10-22 19:28:54.615
+645,General anesthesia for surgeries,715,2024-10-22 19:28:54.615
+797,Hormone replacement therapy,298,2024-10-22 19:28:54.615
+340,Hemodynamic monitoring,552,2024-10-22 19:28:54.615
+312,MRI for brain imaging,711,2024-10-22 19:28:54.615
+796,Immunizations,182,2024-10-22 19:28:54.615
+886,Immunotherapy (allergy shots),300,2024-10-22 19:28:54.615
+666,Electroconvulsive therapy (ECT),622,2024-10-22 19:28:54.615
+161,Medication management,303,2024-10-22 19:28:54.615
+270,Coronary artery bypass surgery,235,2024-10-22 19:28:54.615
+997,Laser therapy for skin conditions,448,2024-10-22 19:28:54.615
+843,General surgery,591,2024-10-22 19:28:54.615
+955,Hormone replacement therapy,255,2024-10-22 19:28:54.615
+680,LASIK eye surgery,765,2024-10-22 19:28:54.615
+232,Immunizations,435,2024-10-22 19:28:54.615
+665,Epidural analgesia during labor,778,2024-10-22 19:28:54.615
+533,Chronic disease management,564,2024-10-22 19:28:54.615
+380,Colonoscopy,859,2024-10-22 19:28:54.615
+315,Dermatologic surgery,873,2024-10-22 19:28:54.615
+714,Hemodynamic monitoring,434,2024-10-22 19:28:54.615
+589,Trauma resuscitation,421,2024-10-22 19:28:54.615
+983,Pediatric surgery,567,2024-10-22 19:28:54.615
+548,Dialysis,756,2024-10-22 19:28:54.615
+313,Angioplasty and stent placement,266,2024-10-22 19:28:54.615
+831,Surgical oncology,195,2024-10-22 19:28:54.615
+615,Thyroid biopsy,228,2024-10-22 19:28:54.615
+203,Kidney transplant,882,2024-10-22 19:28:54.615
+600,Advanced cardiac life support,351,2024-10-22 19:28:54.615
+824,Coronary artery bypass surgery,602,2024-10-22 19:28:54.615
+63,Endoscopy,500,2024-10-22 19:28:54.615
+486,Dermatologic surgery,379,2024-10-22 19:28:54.615
+359,Emotional and spiritual support,255,2024-10-22 19:28:54.615
+494,Allergy testing,519,2024-10-22 19:28:54.615
+215,Interventional radiology procedures,327,2024-10-22 19:28:54.615
+205,Rhinoplasty,538,2024-10-22 19:28:54.615
+690,Sedation for minor procedures,789,2024-10-22 19:28:54.615
+753,Kidney transplant,113,2024-10-22 19:28:54.615
+102,General surgery,744,2024-10-22 19:28:54.615
+891,Immunizations,724,2024-10-22 19:28:54.615
+915,"X-rays, CT scans, MRI scans",767,2024-10-22 19:28:54.615
+273,Kidney transplant,636,2024-10-22 19:28:54.615
+326,Colonoscopy,875,2024-10-22 19:28:54.615
+976,Cochlear implant surgery,763,2024-10-22 19:28:54.615
+571,Emergency surgical procedures,988,2024-10-22 19:28:54.615
+319,"Cosmetic procedures (e.g., Botox, fillers)",616,2024-10-22 19:28:54.615
+996,Dementia care,108,2024-10-22 19:28:54.615
+612,Colonoscopy,634,2024-10-22 19:28:54.615
+585,Polypharmacy management,481,2024-10-22 19:28:54.615
+973,Emotional and spiritual support,715,2024-10-22 19:28:54.615
+293,Comprehensive geriatric assessment,105,2024-10-22 19:28:54.615
+295,Comprehensive geriatric assessment,172,2024-10-22 19:28:54.615
+273,MRI for brain imaging,161,2024-10-22 19:28:54.615
+820,Dermatologic surgery,880,2024-10-22 19:28:54.615
+180,Interventional radiology procedures,352,2024-10-22 19:28:54.615
+350,Surgical oncology,376,2024-10-22 19:28:54.615
+461,Dermatologic surgery,956,2024-10-22 19:28:54.615
+238,Polypharmacy management,361,2024-10-22 19:28:54.615
+961,Plastic surgery,851,2024-10-22 19:28:54.615
+889,"Cosmetic procedures (e.g., Botox, fillers)",632,2024-10-22 19:28:54.615
+920,Trauma resuscitation,538,2024-10-22 19:28:54.615
+752,EEG (Electroencephalogram),185,2024-10-22 19:28:54.615
+858,Minor surgical procedures,672,2024-10-22 19:28:54.615
+481,Comprehensive geriatric assessment,419,2024-10-22 19:28:54.615
+869,Rhinoplasty,166,2024-10-22 19:28:54.615
+120,Tonsillectomy and adenoidectomy,172,2024-10-22 19:28:54.615
+94,Anesthetic care during childbirth,865,2024-10-22 19:28:54.615
+140,Insulin pump management for diabetes,398,2024-10-22 19:28:54.615
+707,Sedation for minor procedures,448,2024-10-22 19:28:54.615
+348,Coronary artery bypass surgery,948,2024-10-22 19:28:54.615
+975,Dialysis,805,2024-10-22 19:28:54.615
+717,Surgical oncology,504,2024-10-22 19:28:54.615
+769,Thyroid biopsy,771,2024-10-22 19:28:54.615
+236,Polypharmacy management,468,2024-10-22 19:28:54.615
+205,Anesthetic care during childbirth,307,2024-10-22 19:28:54.615
+983,Radiation therapy,721,2024-10-22 19:28:54.615
+767,"Cosmetic procedures (e.g., Botox, fillers)",405,2024-10-22 19:28:54.615
+285,LASIK eye surgery,882,2024-10-22 19:28:54.615
+773,Plastic surgery,259,2024-10-22 19:28:54.615
+632,"Cosmetic procedures (e.g., Botox, fillers)",271,2024-10-22 19:28:54.615
+762,Rhinoplasty,317,2024-10-22 19:28:54.615
+883,Electroconvulsive therapy (ECT),150,2024-10-22 19:28:54.615
+299,General health check-ups,592,2024-10-22 19:28:54.615
+285,Interventional radiology procedures,718,2024-10-22 19:28:54.615
+803,Thyroid biopsy,961,2024-10-22 19:28:54.615
+550,Advanced cardiac life support,201,2024-10-22 19:28:54.615
+257,MRI for brain imaging,185,2024-10-22 19:28:54.615
+964,Electroconvulsive therapy (ECT),689,2024-10-22 19:28:54.615
+544,Pacemaker implantation,554,2024-10-22 19:28:54.615
+222,Endoscopy,779,2024-10-22 19:28:54.615
+430,Minor surgical procedures,653,2024-10-22 19:28:54.615
+927,General health check-ups,830,2024-10-22 19:28:54.615
+709,Psychotherapy,887,2024-10-22 19:28:54.615
+212,Dementia care,935,2024-10-22 19:28:54.615
+486,Minor surgical procedures,263,2024-10-22 19:28:54.615
+235,Hormone replacement therapy,315,2024-10-22 19:28:54.615
+981,General surgery,859,2024-10-22 19:28:54.615
+563,Tonsillectomy and adenoidectomy,725,2024-10-22 19:28:54.615
+920,Minor surgical procedures,835,2024-10-22 19:28:54.615
+184,Symptom management for end-of-life care,711,2024-10-22 19:28:54.615
+579,Polypharmacy management,627,2024-10-22 19:28:54.615
+941,Colonoscopy,208,2024-10-22 19:28:54.615
+850,Orthopedic surgery,135,2024-10-22 19:28:54.615
+582,Hormone replacement therapy,649,2024-10-22 19:28:54.615
+101,Angioplasty and stent placement,654,2024-10-22 19:28:54.615
+628,"X-rays, CT scans, MRI scans",452,2024-10-22 19:28:54.615
+76,Rhinoplasty,677,2024-10-22 19:28:54.615
+351,MRI for brain imaging,811,2024-10-22 19:28:54.615
+847,Emergency surgical procedures,758,2024-10-22 19:28:54.615
+181,Endoscopy,135,2024-10-22 19:28:54.615
+313,Intensive care management,233,2024-10-22 19:28:54.615
+614,Orthopedic surgery,139,2024-10-22 19:28:54.615
+780,Hemodynamic monitoring,140,2024-10-22 19:28:54.615
+85,Epidural anesthesia for pain management,180,2024-10-22 19:28:54.615
+201,Plastic surgery,141,2024-10-22 19:28:54.615
+204,Orthopedic surgery,293,2024-10-22 19:28:54.615
+312,Insulin pump management for diabetes,916,2024-10-22 19:28:54.615
+385,Hemodynamic monitoring,199,2024-10-22 19:28:54.615
+625,General health check-ups,584,2024-10-22 19:28:54.615
+878,Epidural analgesia during labor,688,2024-10-22 19:28:54.615
+276,Psychotherapy,205,2024-10-22 19:28:54.615
+567,Trauma resuscitation,774,2024-10-22 19:28:54.615
+121,Insulin pump management for diabetes,199,2024-10-22 19:28:54.615
+237,Pacemaker implantation,918,2024-10-22 19:28:54.615
+468,Chronic disease management,505,2024-10-22 19:28:54.615
+922,Nephrectomy,743,2024-10-22 19:28:54.615
+375,Coronary artery bypass surgery,982,2024-10-22 19:28:54.615
+807,Chronic disease management,325,2024-10-22 19:28:54.615
+298,Dermatologic surgery,818,2024-10-22 19:28:54.615
+56,Immunizations,129,2024-10-22 19:28:54.615
+457,Intensive care management,537,2024-10-22 19:28:54.615
+54,General surgery,514,2024-10-22 19:28:54.615
+400,Cataract surgery,651,2024-10-22 19:28:54.615
+934,Thyroid biopsy,962,2024-10-22 19:28:54.615
+249,Psychotherapy,353,2024-10-22 19:28:54.615
+695,Sedation for minor procedures,966,2024-10-22 19:28:54.615
+127,Pediatric surgery,900,2024-10-22 19:28:54.615
+997,EEG (Electroencephalogram),577,2024-10-22 19:28:54.615
+295,Plastic surgery,808,2024-10-22 19:28:54.615
+824,Cataract surgery,652,2024-10-22 19:28:54.615
+647,Retinal surgery,495,2024-10-22 19:28:54.615
+872,Emotional and spiritual support,514,2024-10-22 19:28:54.615
+921,Liver biopsy,393,2024-10-22 19:28:54.615
+334,General surgery,573,2024-10-22 19:28:54.615
+172,Surgical oncology,398,2024-10-22 19:28:54.615
+735,Colonoscopy,204,2024-10-22 19:28:54.615
+921,EEG (Electroencephalogram),894,2024-10-22 19:28:54.615
+125,Minor surgical procedures,735,2024-10-22 19:28:54.615
+616,Insulin pump management for diabetes,839,2024-10-22 19:28:54.615
+831,Thyroid biopsy,839,2024-10-22 19:28:54.615
+97,"Cosmetic procedures (e.g., Botox, fillers)",884,2024-10-22 19:28:54.615
+468,Rhinoplasty,543,2024-10-22 19:28:54.615
+792,Anesthetic care during childbirth,396,2024-10-22 19:28:54.615
+755,Sedation for minor procedures,228,2024-10-22 19:28:54.615
+916,Interventional radiology procedures,993,2024-10-22 19:28:54.615
+532,Lumbar puncture,286,2024-10-22 19:28:54.615
+479,Emergency surgical procedures,573,2024-10-22 19:28:54.615
+280,Polypharmacy management,530,2024-10-22 19:28:54.615
+956,EEG (Electroencephalogram),410,2024-10-22 19:28:54.615
+503,Kidney transplant,322,2024-10-22 19:28:54.615
+223,Immunizations,770,2024-10-22 19:28:54.615
+474,Laser therapy for skin conditions,373,2024-10-22 19:28:54.615
+598,Emotional and spiritual support,757,2024-10-22 19:28:54.615
+551,Cochlear implant surgery,781,2024-10-22 19:28:54.615
+459,Interventional radiology procedures,254,2024-10-22 19:28:54.615
+407,Angioplasty and stent placement,503,2024-10-22 19:28:54.615
+767,Plastic surgery,725,2024-10-22 19:28:54.615
+106,Rhinoplasty,218,2024-10-22 19:28:54.615
+444,Epidural analgesia during labor,768,2024-10-22 19:28:54.615
+912,Surgical oncology,414,2024-10-22 19:28:54.615
+115,Thyroid biopsy,184,2024-10-22 19:28:54.615
+209,Hemodynamic monitoring,439,2024-10-22 19:28:54.615
+759,Immunotherapy (allergy shots),845,2024-10-22 19:28:54.615
+731,Hormone replacement therapy,147,2024-10-22 19:28:54.615
+405,"Cosmetic procedures (e.g., Botox, fillers)",544,2024-10-22 19:28:54.615
+223,"X-rays, CT scans, MRI scans",358,2024-10-22 19:28:54.615
+890,Dermatologic surgery,562,2024-10-22 19:28:54.615
+903,Emergency surgical procedures,258,2024-10-22 19:28:54.615
+743,Comprehensive geriatric assessment,800,2024-10-22 19:28:54.615
+688,Kidney transplant,125,2024-10-22 19:28:54.615
+405,Hormone replacement therapy,351,2024-10-22 19:28:54.615
+66,Comprehensive geriatric assessment,441,2024-10-22 19:28:54.615
+418,Radiation therapy,537,2024-10-22 19:28:54.615
+525,Rhinoplasty,212,2024-10-22 19:28:54.615
+368,Cochlear implant surgery,358,2024-10-22 19:28:54.615
+807,General health check-ups,132,2024-10-22 19:28:54.615
+498,Well-child check-ups,393,2024-10-22 19:28:54.615
+410,Pacemaker implantation,495,2024-10-22 19:28:54.615
+403,Coronary artery bypass surgery,772,2024-10-22 19:28:54.615
+305,Dermatologic surgery,987,2024-10-22 19:28:54.615
+250,Trauma resuscitation,695,2024-10-22 19:28:54.615
+618,Hemodynamic monitoring,267,2024-10-22 19:28:54.615
+878,Anesthetic care during childbirth,753,2024-10-22 19:28:54.615
+219,Tonsillectomy and adenoidectomy,237,2024-10-22 19:28:54.615
+634,Symptom management for end-of-life care,101,2024-10-22 19:28:54.615
+621,"X-rays, CT scans, MRI scans",808,2024-10-22 19:28:54.615
+620,Epidural analgesia during labor,572,2024-10-22 19:28:54.615
+333,Angioplasty and stent placement,669,2024-10-22 19:28:54.615
+857,Thyroid biopsy,987,2024-10-22 19:28:54.615
+515,Tonsillectomy and adenoidectomy,466,2024-10-22 19:28:54.615
+398,Hormone replacement therapy,356,2024-10-22 19:28:54.615
+678,Immunotherapy (allergy shots),390,2024-10-22 19:28:54.615
+643,Emergency surgical procedures,412,2024-10-22 19:28:54.615
+713,Anesthetic care during childbirth,237,2024-10-22 19:28:54.615
+148,MRI for brain imaging,104,2024-10-22 19:28:54.615
+941,Insulin pump management for diabetes,186,2024-10-22 19:28:54.615
+671,EEG (Electroencephalogram),683,2024-10-22 19:28:54.615
+96,Angioplasty and stent placement,691,2024-10-22 19:28:54.615
+317,Advanced cardiac life support,394,2024-10-22 19:28:54.615
+383,Dementia care,913,2024-10-22 19:28:54.615
+274,Advanced cardiac life support,707,2024-10-22 19:28:54.615
+881,Advanced cardiac life support,513,2024-10-22 19:28:54.615
+413,Angioplasty and stent placement,959,2024-10-22 19:28:54.615
+907,Emergency surgical procedures,288,2024-10-22 19:28:54.615
+531,Symptom management for end-of-life care,966,2024-10-22 19:28:54.615
+328,Kidney transplant,285,2024-10-22 19:28:54.615
+916,Angioplasty and stent placement,369,2024-10-22 19:28:54.615
+489,Hormone replacement therapy,299,2024-10-22 19:28:54.615
+359,Coronary artery bypass surgery,464,2024-10-22 19:28:54.615
+882,Cataract surgery,547,2024-10-22 19:28:54.615
+232,Orthopedic surgery,410,2024-10-22 19:28:54.615
+820,Allergy testing,158,2024-10-22 19:28:54.615
+968,Pacemaker implantation,545,2024-10-22 19:28:54.615
+870,Medication management,360,2024-10-22 19:28:54.615
+794,"X-rays, CT scans, MRI scans",120,2024-10-22 19:28:54.615
+584,Immunotherapy (allergy shots),808,2024-10-22 19:28:54.615
+570,Dermatologic surgery,770,2024-10-22 19:28:54.615
+383,Anesthetic care during childbirth,697,2024-10-22 19:28:54.615
+548,Hormone replacement therapy,392,2024-10-22 19:28:54.615
+325,Hormone replacement therapy,446,2024-10-22 19:28:54.615
+864,Well-child check-ups,917,2024-10-22 19:28:54.615
+822,Radiation therapy,812,2024-10-22 19:28:54.615
+889,Coronary artery bypass surgery,404,2024-10-22 19:28:54.615
+897,Allergy testing,228,2024-10-22 19:28:54.615
+895,Hemodynamic monitoring,346,2024-10-22 19:28:54.615
+261,LASIK eye surgery,856,2024-10-22 19:28:54.615
+908,Interventional radiology procedures,676,2024-10-22 19:28:54.615
+170,Interventional radiology procedures,878,2024-10-22 19:28:54.615
+149,Plastic surgery,356,2024-10-22 19:28:54.615
+315,Emergency surgical procedures,645,2024-10-22 19:28:54.615
+988,Allergy testing,414,2024-10-22 19:28:54.615
+58,Sedation for minor procedures,809,2024-10-22 19:28:54.615
+656,Plastic surgery,228,2024-10-22 19:28:54.615
+919,Comprehensive geriatric assessment,605,2024-10-22 19:28:54.615
+375,Insulin pump management for diabetes,339,2024-10-22 19:28:54.615
+649,Trauma resuscitation,484,2024-10-22 19:28:54.615
+684,Trauma resuscitation,316,2024-10-22 19:28:54.615
+296,Psychotherapy,154,2024-10-22 19:28:54.615
+181,Minor surgical procedures,963,2024-10-22 19:28:54.615
+701,Coronary artery bypass surgery,715,2024-10-22 19:28:54.615
+810,Cataract surgery,498,2024-10-22 19:28:54.615
+563,Anesthetic care during childbirth,506,2024-10-22 19:28:54.615
+324,General surgery,555,2024-10-22 19:28:54.615
+804,Anesthetic care during childbirth,874,2024-10-22 19:28:54.615
+936,Laser therapy for skin conditions,524,2024-10-22 19:28:54.615
+167,Polypharmacy management,790,2024-10-22 19:28:54.615
+712,Retinal surgery,756,2024-10-22 19:28:54.615
+70,Polypharmacy management,673,2024-10-22 19:28:54.615
+727,Cataract surgery,339,2024-10-22 19:28:54.615
+646,Immunotherapy (allergy shots),277,2024-10-22 19:28:54.615
+769,Dementia care,801,2024-10-22 19:28:54.615
+244,Dialysis,302,2024-10-22 19:28:54.615
+720,General surgery,489,2024-10-22 19:28:54.615
+548,Dermatologic surgery,830,2024-10-22 19:28:54.615
+288,Liver biopsy,826,2024-10-22 19:28:54.615
+346,"X-rays, CT scans, MRI scans",150,2024-10-22 19:28:54.615
+651,Liver biopsy,676,2024-10-22 19:28:54.615
+301,Mechanical ventilation,626,2024-10-22 19:28:54.615
+485,"X-rays, CT scans, MRI scans",427,2024-10-22 19:28:54.615
+407,LASIK eye surgery,417,2024-10-22 19:28:54.615
+60,Endoscopy,969,2024-10-22 19:28:54.615
+563,Immunotherapy (allergy shots),464,2024-10-22 19:28:54.615
+428,Emotional and spiritual support,209,2024-10-22 19:28:54.615
+537,Orthopedic surgery,665,2024-10-22 19:28:54.615
+681,Interventional radiology procedures,991,2024-10-22 19:28:54.615
+892,Dialysis,637,2024-10-22 19:28:54.615
+146,Sedation for minor procedures,430,2024-10-22 19:28:54.615
+158,Radiation therapy,331,2024-10-22 19:28:54.615
+742,Epidural anesthesia for pain management,159,2024-10-22 19:28:54.615
+812,Cochlear implant surgery,303,2024-10-22 19:28:54.615
+910,General surgery,329,2024-10-22 19:28:54.615
+866,Cochlear implant surgery,349,2024-10-22 19:28:54.615
+127,Well-child check-ups,350,2024-10-22 19:28:54.615
+141,Trauma resuscitation,135,2024-10-22 19:28:54.615
+960,Retinal surgery,177,2024-10-22 19:28:54.615
+231,Minor surgical procedures,806,2024-10-22 19:28:54.615
+609,Allergy testing,928,2024-10-22 19:28:54.615
+935,General anesthesia for surgeries,512,2024-10-22 19:28:54.615
+162,General anesthesia for surgeries,858,2024-10-22 19:28:54.615
+584,Coronary artery bypass surgery,237,2024-10-22 19:28:54.615
+702,EEG (Electroencephalogram),161,2024-10-22 19:28:54.615
+847,Medication management,281,2024-10-22 19:28:54.615
+804,Anesthetic care during childbirth,191,2024-10-22 19:28:54.615
+360,Comprehensive geriatric assessment,800,2024-10-22 19:28:54.615
+273,Pediatric surgery,403,2024-10-22 19:28:54.615
+288,Well-child check-ups,863,2024-10-22 19:28:54.615
+529,Epidural analgesia during labor,715,2024-10-22 19:28:54.615
+176,Intensive care management,216,2024-10-22 19:28:54.615
+460,Laser therapy for skin conditions,778,2024-10-22 19:28:54.615
+805,Well-child check-ups,411,2024-10-22 19:28:54.615
+822,Immunizations,857,2024-10-22 19:28:54.615
+265,Pediatric surgery,457,2024-10-22 19:28:54.615
+951,Endoscopy,133,2024-10-22 19:28:54.615
+160,Medication management,768,2024-10-22 19:28:54.615
+656,Rhinoplasty,100,2024-10-22 19:28:54.615
+637,Medication management,584,2024-10-22 19:28:54.615
+837,Mechanical ventilation,674,2024-10-22 19:28:54.615
+315,Nephrectomy,417,2024-10-22 19:28:54.615
+587,Surgical oncology,701,2024-10-22 19:28:54.615
+715,Tonsillectomy and adenoidectomy,398,2024-10-22 19:28:54.615
+974,Hormone replacement therapy,294,2024-10-22 19:28:54.615
+127,"Cosmetic procedures (e.g., Botox, fillers)",894,2024-10-22 19:28:54.615
+996,EEG (Electroencephalogram),650,2024-10-22 19:28:54.615
+418,Insulin pump management for diabetes,815,2024-10-22 19:28:54.615
+832,Dermatologic surgery,670,2024-10-22 19:28:54.615
+839,"Cosmetic procedures (e.g., Botox, fillers)",132,2024-10-22 19:28:54.615
+291,Comprehensive geriatric assessment,243,2024-10-22 19:28:54.615
+139,Medication management,505,2024-10-22 19:28:54.615
+357,Dermatologic surgery,167,2024-10-22 19:28:54.615
+776,Advanced cardiac life support,836,2024-10-22 19:28:54.615
+921,Cataract surgery,763,2024-10-22 19:28:54.615
+667,Liver biopsy,328,2024-10-22 19:28:54.615
+157,Chemotherapy,556,2024-10-22 19:28:54.615
+203,Kidney transplant,844,2024-10-22 19:28:54.615
+231,Dermatologic surgery,739,2024-10-22 19:28:54.615
+237,Hormone replacement therapy,765,2024-10-22 19:28:54.615
+710,LASIK eye surgery,702,2024-10-22 19:28:54.615
+100,Pediatric surgery,376,2024-10-22 19:28:54.615
+160,Comprehensive geriatric assessment,991,2024-10-22 19:28:54.615
+830,LASIK eye surgery,751,2024-10-22 19:28:54.615
+946,Colonoscopy,169,2024-10-22 19:28:54.615
+757,Insulin pump management for diabetes,708,2024-10-22 19:28:54.615
+864,Radiation therapy,734,2024-10-22 19:28:54.615
+103,Chemotherapy,212,2024-10-22 19:28:54.615
+60,Sedation for minor procedures,135,2024-10-22 19:28:54.615
+295,Sedation for minor procedures,683,2024-10-22 19:28:54.615
+791,Colonoscopy,577,2024-10-22 19:28:54.615
+245,Psychotherapy,714,2024-10-22 19:28:54.615
+925,Sedation for minor procedures,901,2024-10-22 19:28:54.615
+582,Pediatric surgery,969,2024-10-22 19:28:54.615
+451,Minor surgical procedures,324,2024-10-22 19:28:54.615
+66,Electroconvulsive therapy (ECT),728,2024-10-22 19:28:54.615
+178,Dermatologic surgery,327,2024-10-22 19:28:54.615
+787,Allergy testing,130,2024-10-22 19:28:54.615
+143,Interventional radiology procedures,287,2024-10-22 19:28:54.615
+256,Interventional radiology procedures,186,2024-10-22 19:28:54.615
+847,Intensive care management,427,2024-10-22 19:28:54.615
+536,Immunotherapy (allergy shots),122,2024-10-22 19:28:54.615
+112,Coronary artery bypass surgery,370,2024-10-22 19:28:54.615
+720,Dermatologic surgery,511,2024-10-22 19:28:54.615
+800,Laser therapy for skin conditions,316,2024-10-22 19:28:54.615
+418,Chronic disease management,818,2024-10-22 19:28:54.615
+131,Radiation therapy,521,2024-10-22 19:28:54.615
+605,Coronary artery bypass surgery,960,2024-10-22 19:28:54.615
+161,Intensive care management,353,2024-10-22 19:28:54.615
+633,Kidney transplant,858,2024-10-22 19:28:54.615
+444,Liver biopsy,417,2024-10-22 19:28:54.615
+86,Lumbar puncture,726,2024-10-22 19:28:54.615
+770,LASIK eye surgery,874,2024-10-22 19:28:54.615
+434,Mechanical ventilation,294,2024-10-22 19:28:54.615
+867,Lumbar puncture,574,2024-10-22 19:28:54.615
+980,Chemotherapy,338,2024-10-22 19:28:54.615
+377,Colonoscopy,709,2024-10-22 19:28:54.615
+693,Dementia care,823,2024-10-22 19:28:54.615
+806,Interventional radiology procedures,636,2024-10-22 19:28:54.615
+204,Cataract surgery,545,2024-10-22 19:28:54.615
+276,Dialysis,808,2024-10-22 19:28:54.615
+978,Emergency surgical procedures,777,2024-10-22 19:28:54.615
+843,"Cosmetic procedures (e.g., Botox, fillers)",748,2024-10-22 19:28:54.615
+385,Colonoscopy,484,2024-10-22 19:28:54.615
+192,Immunotherapy (allergy shots),649,2024-10-22 19:28:54.615
+486,Tonsillectomy and adenoidectomy,365,2024-10-22 19:28:54.615
+691,Immunizations,489,2024-10-22 19:28:54.615
+583,Cataract surgery,462,2024-10-22 19:28:54.615
+271,General surgery,185,2024-10-22 19:28:54.615
+399,Surgical oncology,746,2024-10-22 19:28:54.615
+376,Comprehensive geriatric assessment,340,2024-10-22 19:28:54.615
+273,Coronary artery bypass surgery,891,2024-10-22 19:28:54.615
+89,LASIK eye surgery,371,2024-10-22 19:28:54.615
+966,Medication management,365,2024-10-22 19:28:54.615
+615,Electroconvulsive therapy (ECT),531,2024-10-22 19:28:54.615
+814,Insulin pump management for diabetes,144,2024-10-22 19:28:54.615
+531,Cochlear implant surgery,317,2024-10-22 19:28:54.615
+330,Pacemaker implantation,469,2024-10-22 19:28:54.615
+939,Endoscopy,653,2024-10-22 19:28:54.615
+249,Pediatric surgery,173,2024-10-22 19:28:54.615
+75,General surgery,766,2024-10-22 19:28:54.615
+485,"Cosmetic procedures (e.g., Botox, fillers)",596,2024-10-22 19:28:54.615
+206,Epidural analgesia during labor,785,2024-10-22 19:28:54.615
+268,Pacemaker implantation,946,2024-10-22 19:28:54.615
+135,LASIK eye surgery,939,2024-10-22 19:28:54.615
+82,Psychotherapy,769,2024-10-22 19:28:54.615
+494,Insulin pump management for diabetes,399,2024-10-22 19:28:54.615
+746,Colonoscopy,111,2024-10-22 19:28:54.615
+371,General surgery,459,2024-10-22 19:28:54.615
+262,Orthopedic surgery,539,2024-10-22 19:28:54.615
+80,Thyroid biopsy,141,2024-10-22 19:28:54.615
+909,Intensive care management,756,2024-10-22 19:28:54.615
+75,Epidural analgesia during labor,257,2024-10-22 19:28:54.615
+346,Nephrectomy,888,2024-10-22 19:28:54.615
+577,Angioplasty and stent placement,842,2024-10-22 19:28:54.615
+896,"Cosmetic procedures (e.g., Botox, fillers)",958,2024-10-22 19:28:54.615
+368,Rhinoplasty,781,2024-10-22 19:28:54.615
+627,Cataract surgery,109,2024-10-22 19:28:54.615
+425,General health check-ups,871,2024-10-22 19:28:54.615
+957,General surgery,771,2024-10-22 19:28:54.615
+565,Liver biopsy,971,2024-10-22 19:28:54.615
+743,EEG (Electroencephalogram),268,2024-10-22 19:28:54.615
+904,Insulin pump management for diabetes,455,2024-10-22 19:28:54.615
+189,Epidural anesthesia for pain management,347,2024-10-22 19:28:54.615
+845,Medication management,559,2024-10-22 19:28:54.615
+443,Interventional radiology procedures,921,2024-10-22 19:28:54.615
+200,Polypharmacy management,640,2024-10-22 19:28:54.615
+648,Kidney transplant,556,2024-10-22 19:28:54.615
+114,Endoscopy,397,2024-10-22 19:28:54.615
+868,Dementia care,570,2024-10-22 19:28:54.615
+623,Mechanical ventilation,287,2024-10-22 19:28:54.615
+404,Retinal surgery,571,2024-10-22 19:28:54.615
+644,Intensive care management,999,2024-10-22 19:28:54.615
+436,Orthopedic surgery,190,2024-10-22 19:28:54.615
+812,Colonoscopy,677,2024-10-22 19:28:54.615
+291,Laser therapy for skin conditions,700,2024-10-22 19:28:54.615
+305,Plastic surgery,699,2024-10-22 19:28:54.615
+581,Retinal surgery,442,2024-10-22 19:28:54.615
+735,Advanced cardiac life support,759,2024-10-22 19:28:54.615
+438,Anesthetic care during childbirth,103,2024-10-22 19:28:54.615
+433,Dementia care,853,2024-10-22 19:28:54.615
+530,Trauma resuscitation,234,2024-10-22 19:28:54.615
+200,Psychotherapy,313,2024-10-22 19:28:54.615
+444,Tonsillectomy and adenoidectomy,926,2024-10-22 19:28:54.615
+522,Nephrectomy,781,2024-10-22 19:28:54.615
+193,Epidural anesthesia for pain management,272,2024-10-22 19:28:54.615
+593,Pediatric surgery,450,2024-10-22 19:28:54.615
+738,Dermatologic surgery,690,2024-10-22 19:28:54.615
+622,Minor surgical procedures,639,2024-10-22 19:28:54.615
+855,Advanced cardiac life support,821,2024-10-22 19:28:54.615
+861,Medication management,328,2024-10-22 19:28:54.615
+831,"X-rays, CT scans, MRI scans",935,2024-10-22 19:28:54.615
+61,Colonoscopy,505,2024-10-22 19:28:54.615
+245,Retinal surgery,301,2024-10-22 19:28:54.615
+428,Polypharmacy management,460,2024-10-22 19:28:54.615
+100,Immunotherapy (allergy shots),864,2024-10-22 19:28:54.615
+367,Laser therapy for skin conditions,795,2024-10-22 19:28:54.615
+680,Trauma resuscitation,372,2024-10-22 19:28:54.615
+846,Lumbar puncture,860,2024-10-22 19:28:54.615
+471,Advanced cardiac life support,632,2024-10-22 19:28:54.615
+50,Emergency surgical procedures,848,2024-10-22 19:28:54.615
+648,Trauma resuscitation,321,2024-10-22 19:28:54.615
+963,Plastic surgery,346,2024-10-22 19:28:54.615
+484,Well-child check-ups,527,2024-10-22 19:28:54.615
+751,Advanced cardiac life support,165,2024-10-22 19:28:54.615
+387,Liver biopsy,139,2024-10-22 19:28:54.615
+113,Advanced cardiac life support,372,2024-10-22 19:28:54.615
+285,Medication management,744,2024-10-22 19:28:54.615
+521,Interventional radiology procedures,726,2024-10-22 19:28:54.615
+648,Orthopedic surgery,103,2024-10-22 19:28:54.615
+400,Colonoscopy,425,2024-10-22 19:28:54.615
+317,"X-rays, CT scans, MRI scans",801,2024-10-22 19:28:54.615
+433,Laser therapy for skin conditions,559,2024-10-22 19:28:54.615
+145,Psychotherapy,792,2024-10-22 19:28:54.615
+661,Immunotherapy (allergy shots),745,2024-10-22 19:28:54.615
+107,Dialysis,622,2024-10-22 19:28:54.615
+860,Allergy testing,393,2024-10-22 19:28:54.615
+152,Liver biopsy,422,2024-10-22 19:28:54.615
+786,Orthopedic surgery,143,2024-10-22 19:28:54.615
+934,MRI for brain imaging,739,2024-10-22 19:28:54.615
+499,Emergency surgical procedures,536,2024-10-22 19:28:54.615
+537,MRI for brain imaging,595,2024-10-22 19:28:54.615
+179,Intensive care management,202,2024-10-22 19:28:54.615
+176,Epidural analgesia during labor,591,2024-10-22 19:28:54.615
+665,Kidney transplant,326,2024-10-22 19:28:54.615
+994,MRI for brain imaging,253,2024-10-22 19:28:54.615
+431,Surgical oncology,305,2024-10-22 19:28:54.615
+438,Hormone replacement therapy,613,2024-10-22 19:28:54.615
+983,Angioplasty and stent placement,398,2024-10-22 19:28:54.615
+172,Allergy testing,431,2024-10-22 19:28:54.615
+489,Chemotherapy,641,2024-10-22 19:28:54.615
+867,Orthopedic surgery,945,2024-10-22 19:28:54.615
+378,Surgical oncology,339,2024-10-22 19:28:54.615
+572,Orthopedic surgery,556,2024-10-22 19:28:54.615
+58,Emergency surgical procedures,677,2024-10-22 19:28:54.615
+895,Orthopedic surgery,945,2024-10-22 19:28:54.615
+611,Orthopedic surgery,974,2024-10-22 19:28:54.615
+580,EEG (Electroencephalogram),377,2024-10-22 19:28:54.615
+552,Symptom management for end-of-life care,683,2024-10-22 19:28:54.615
+262,"Cosmetic procedures (e.g., Botox, fillers)",563,2024-10-22 19:28:54.615
+850,Intensive care management,107,2024-10-22 19:28:54.615
+985,Endoscopy,268,2024-10-22 19:28:54.615
+88,Intensive care management,846,2024-10-22 19:28:54.615
+383,Liver biopsy,653,2024-10-22 19:28:54.615
+873,Minor surgical procedures,424,2024-10-22 19:28:54.615
+988,Immunotherapy (allergy shots),449,2024-10-22 19:28:54.615
+186,General surgery,926,2024-10-22 19:28:54.615
+482,Retinal surgery,595,2024-10-22 19:28:54.615
+114,General surgery,705,2024-10-22 19:28:54.615
+826,Symptom management for end-of-life care,154,2024-10-22 19:28:54.615
+885,Polypharmacy management,206,2024-10-22 19:28:54.615
+940,Lumbar puncture,103,2024-10-22 19:28:54.615
+105,Retinal surgery,475,2024-10-22 19:28:54.615
+326,Symptom management for end-of-life care,706,2024-10-22 19:28:54.615
+178,MRI for brain imaging,436,2024-10-22 19:28:54.615
+991,Psychotherapy,917,2024-10-22 19:28:54.615
+631,Medication management,663,2024-10-22 19:28:54.615
+242,Endoscopy,651,2024-10-22 19:28:54.615
+357,Trauma resuscitation,140,2024-10-22 19:28:54.615
+962,Psychotherapy,664,2024-10-22 19:28:54.615
+815,Advanced cardiac life support,981,2024-10-22 19:28:54.615
+322,Well-child check-ups,822,2024-10-22 19:28:54.615
+359,Minor surgical procedures,133,2024-10-22 19:28:54.615
+937,Liver biopsy,572,2024-10-22 19:28:54.615
+88,Advanced cardiac life support,253,2024-10-22 19:28:54.615
+772,Comprehensive geriatric assessment,781,2024-10-22 19:28:54.615
+738,Mechanical ventilation,359,2024-10-22 19:28:54.615
+801,Radiation therapy,966,2024-10-22 19:28:54.615
+420,Colonoscopy,824,2024-10-22 19:28:54.615
+215,Lumbar puncture,858,2024-10-22 19:28:54.615
+823,Emergency surgical procedures,168,2024-10-22 19:28:54.615
+606,Intensive care management,944,2024-10-22 19:28:54.615
+242,Insulin pump management for diabetes,895,2024-10-22 19:28:54.615
+500,EEG (Electroencephalogram),305,2024-10-22 19:28:54.615
+595,Cochlear implant surgery,342,2024-10-22 19:28:54.615
+843,Coronary artery bypass surgery,175,2024-10-22 19:28:54.615
+527,Radiation therapy,242,2024-10-22 19:28:54.615
+574,Polypharmacy management,999,2024-10-22 19:28:54.615
+822,Dementia care,795,2024-10-22 19:28:54.615
+503,Dermatologic surgery,309,2024-10-22 19:28:54.615
+547,Polypharmacy management,573,2024-10-22 19:28:54.615
+325,Angioplasty and stent placement,733,2024-10-22 19:28:54.615
+101,Well-child check-ups,556,2024-10-22 19:28:54.615
+329,Nephrectomy,954,2024-10-22 19:28:54.615
+590,Electroconvulsive therapy (ECT),688,2024-10-22 19:28:54.615
+973,Intensive care management,793,2024-10-22 19:28:54.615
+93,Liver biopsy,677,2024-10-22 19:28:54.615
+637,Dementia care,334,2024-10-22 19:28:54.615
+269,Electroconvulsive therapy (ECT),420,2024-10-22 19:28:54.615
+926,Thyroid biopsy,844,2024-10-22 19:28:54.615
+448,Comprehensive geriatric assessment,440,2024-10-22 19:28:54.615
+621,General health check-ups,645,2024-10-22 19:28:54.615
+79,Medication management,213,2024-10-22 19:28:54.615
+983,MRI for brain imaging,730,2024-10-22 19:28:54.615
+255,Dialysis,778,2024-10-22 19:28:54.615
+82,Angioplasty and stent placement,770,2024-10-22 19:28:54.615
+128,Comprehensive geriatric assessment,829,2024-10-22 19:28:54.615
+354,Colonoscopy,197,2024-10-22 19:28:54.615
+562,Angioplasty and stent placement,232,2024-10-22 19:28:54.615
+252,Colonoscopy,119,2024-10-22 19:28:54.615
+69,General health check-ups,363,2024-10-22 19:28:54.615
+668,MRI for brain imaging,214,2024-10-22 19:28:54.615
+225,Pediatric surgery,983,2024-10-22 19:28:54.615
+832,Colonoscopy,748,2024-10-22 19:28:54.615
+75,General surgery,814,2024-10-22 19:28:54.615
+626,Polypharmacy management,282,2024-10-22 19:28:54.615
+362,LASIK eye surgery,999,2024-10-22 19:28:54.615
+491,General surgery,815,2024-10-22 19:28:54.615
+654,Electroconvulsive therapy (ECT),540,2024-10-22 19:28:54.615
+718,Polypharmacy management,113,2024-10-22 19:28:54.615
+265,Chemotherapy,435,2024-10-22 19:28:54.615
+599,"X-rays, CT scans, MRI scans",660,2024-10-22 19:28:54.615
+613,Cataract surgery,604,2024-10-22 19:28:54.615
+306,Rhinoplasty,307,2024-10-22 19:28:54.615
+395,Immunizations,323,2024-10-22 19:28:54.615
+377,Sedation for minor procedures,253,2024-10-22 19:28:54.615
+419,Laser therapy for skin conditions,875,2024-10-22 19:28:54.615
+585,Cochlear implant surgery,105,2024-10-22 19:28:54.615
+370,EEG (Electroencephalogram),104,2024-10-22 19:28:54.615
+620,Minor surgical procedures,404,2024-10-22 19:28:54.615
+576,Coronary artery bypass surgery,598,2024-10-22 19:28:54.615
+758,Medication management,411,2024-10-22 19:28:54.615
+527,Endoscopy,655,2024-10-22 19:28:54.615
+658,"Cosmetic procedures (e.g., Botox, fillers)",820,2024-10-22 19:28:54.615
+795,Interventional radiology procedures,419,2024-10-22 19:28:54.615
+228,Laser therapy for skin conditions,524,2024-10-22 19:28:54.615
+901,Endoscopy,924,2024-10-22 19:28:54.615
+742,Chemotherapy,730,2024-10-22 19:28:54.615
+991,Intensive care management,164,2024-10-22 19:28:54.615
+644,"X-rays, CT scans, MRI scans",522,2024-10-22 19:28:54.615
+700,"X-rays, CT scans, MRI scans",773,2024-10-22 19:28:54.615
+796,Interventional radiology procedures,984,2024-10-22 19:28:54.615
+461,Psychotherapy,788,2024-10-22 19:28:54.615
+342,Sedation for minor procedures,433,2024-10-22 19:28:54.615
+403,Insulin pump management for diabetes,612,2024-10-22 19:28:54.615
+509,Laser therapy for skin conditions,181,2024-10-22 19:28:54.615
+980,Surgical oncology,238,2024-10-22 19:28:54.615
+636,Hemodynamic monitoring,521,2024-10-22 19:28:54.615
+264,Epidural anesthesia for pain management,985,2024-10-22 19:28:54.615
+827,Immunizations,884,2024-10-22 19:28:54.615
+316,Hemodynamic monitoring,461,2024-10-22 19:28:54.615
+899,"X-rays, CT scans, MRI scans",133,2024-10-22 19:28:54.615
+811,"X-rays, CT scans, MRI scans",348,2024-10-22 19:28:54.615
+784,Symptom management for end-of-life care,780,2024-10-22 19:28:54.615
+733,Mechanical ventilation,872,2024-10-22 19:28:54.615
+410,Dialysis,258,2024-10-22 19:28:54.615
+197,Cataract surgery,137,2024-10-22 19:28:54.615
+388,Cataract surgery,881,2024-10-22 19:28:54.615
+99,Thyroid biopsy,178,2024-10-22 19:28:54.615
+944,Rhinoplasty,253,2024-10-22 19:28:54.615
+390,Pediatric surgery,933,2024-10-22 19:28:54.615
+87,Anesthetic care during childbirth,797,2024-10-22 19:28:54.615
+322,Liver biopsy,112,2024-10-22 19:28:54.615
+152,Chemotherapy,360,2024-10-22 19:28:54.615
+423,Coronary artery bypass surgery,196,2024-10-22 19:28:54.615
+902,Coronary artery bypass surgery,994,2024-10-22 19:28:54.615
+812,Psychotherapy,593,2024-10-22 19:28:54.615
+897,Emotional and spiritual support,667,2024-10-22 19:28:54.615
+754,Thyroid biopsy,393,2024-10-22 19:28:54.615
+893,Comprehensive geriatric assessment,827,2024-10-22 19:28:54.615
+708,Liver biopsy,685,2024-10-22 19:28:54.615
+208,"Cosmetic procedures (e.g., Botox, fillers)",442,2024-10-22 19:28:54.615
+786,Coronary artery bypass surgery,459,2024-10-22 19:28:54.615
+471,Cataract surgery,229,2024-10-22 19:28:54.615
+888,Radiation therapy,917,2024-10-22 19:28:54.615
+634,General health check-ups,369,2024-10-22 19:28:54.615
+629,Coronary artery bypass surgery,762,2024-10-22 19:28:54.615
+753,Radiation therapy,408,2024-10-22 19:28:54.615
+359,Coronary artery bypass surgery,779,2024-10-22 19:28:54.615
+769,Orthopedic surgery,874,2024-10-22 19:28:54.615
+73,Rhinoplasty,638,2024-10-22 19:28:54.615
+408,Polypharmacy management,188,2024-10-22 19:28:54.615
+551,LASIK eye surgery,731,2024-10-22 19:28:54.615
+511,Sedation for minor procedures,911,2024-10-22 19:28:54.615
+896,Polypharmacy management,459,2024-10-22 19:28:54.615
+307,Cochlear implant surgery,642,2024-10-22 19:28:54.615
+613,Well-child check-ups,571,2024-10-22 19:28:54.615
+77,Comprehensive geriatric assessment,707,2024-10-22 19:28:54.615
+772,Comprehensive geriatric assessment,593,2024-10-22 19:28:54.615
+273,Medication management,142,2024-10-22 19:28:54.615
+177,Comprehensive geriatric assessment,801,2024-10-22 19:28:54.615
+109,Pediatric surgery,958,2024-10-22 19:28:54.615
+901,Epidural analgesia during labor,617,2024-10-22 19:28:54.615
+621,Emergency surgical procedures,648,2024-10-22 19:28:54.615
+779,Mechanical ventilation,154,2024-10-22 19:28:54.615
+100,Endoscopy,348,2024-10-22 19:28:54.615
+581,MRI for brain imaging,664,2024-10-22 19:28:54.615
+602,Intensive care management,526,2024-10-22 19:28:54.615
+198,Dementia care,572,2024-10-22 19:28:54.615
+688,Endoscopy,237,2024-10-22 19:28:54.615
+612,Rhinoplasty,678,2024-10-22 19:28:54.615
+187,Nephrectomy,239,2024-10-22 19:28:54.615
+374,Retinal surgery,754,2024-10-22 19:28:54.615
+304,Liver biopsy,549,2024-10-22 19:28:54.615
+495,Pediatric surgery,995,2024-10-22 19:28:54.615
+300,Dialysis,921,2024-10-22 19:28:54.615
+377,Lumbar puncture,695,2024-10-22 19:28:54.615
+455,Retinal surgery,139,2024-10-22 19:28:54.615
+270,Retinal surgery,474,2024-10-22 19:28:54.615
+549,"X-rays, CT scans, MRI scans",270,2024-10-22 19:28:54.615
+683,Comprehensive geriatric assessment,742,2024-10-22 19:28:54.615
+772,Dementia care,101,2024-10-22 19:28:54.615
+99,Tonsillectomy and adenoidectomy,611,2024-10-22 19:28:54.615
+331,Chronic disease management,311,2024-10-22 19:28:54.615
+587,Cochlear implant surgery,908,2024-10-22 19:28:54.615
+566,Liver biopsy,277,2024-10-22 19:28:54.615
+392,Emotional and spiritual support,641,2024-10-22 19:28:54.615
+460,General health check-ups,551,2024-10-22 19:28:54.615
