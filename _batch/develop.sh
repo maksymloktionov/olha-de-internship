@@ -1,2 +1,2 @@
-docker build -t pyspark .
-docker run -v /home/olha/olha-de-internship/_batch:/usr/src/app -it pyspark /bin/bash
+docker compose up -d
+docker exec -it batch-pyspark-1 bash

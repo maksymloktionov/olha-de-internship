@@ -19,5 +19,3 @@ RUN pip install pycountry
 RUN pip install kagglehub
 
 COPY . .
-
-#CMD ["python", "./spark.py"]
