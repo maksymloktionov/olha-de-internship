@@ -1,13 +1,13 @@
 weather_analysis:
   outputs:
     dev:
-      account: qzcrtyv-cr51063
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       database: DATA_ANALYTICS
-      password: Poli2806AA
       role: dbt_transform
       schema: transformations
       threads: 8
       type: snowflake
-      user: olha
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
       warehouse: dbt_weather
   target: dev
