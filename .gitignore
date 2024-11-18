@@ -3,3 +3,4 @@ dbt_packages/
 logs/
 _dbt/.user.yml
 _dbt/logs
+.github/
