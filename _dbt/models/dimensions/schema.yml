@@ -1,0 +1,79 @@
+version: 2
+
+models:
+  - name: fact_appointment
+    description: "It is a fact table that contains information about appointments."
+    columns:
+      - name: appointment_id
+        description: "Primary key of the appointment."
+        data_tests:
+          - not_null
+      - name: patient_id
+        description: "Foreign key to the patient."
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_patient')
+              field: patient_id
+      - name: doctor_id
+        description: "Foreign key to the doctor."
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_doctor')
+              field: doctor_id
+      - name: procedure_id
+        description: "Foreign key to the medical procedure. "
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_medical_procedure')
+              field: procedure_id
+      - name: invoice_id
+        description: "Foreign key to the billing."
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_billing')
+              field: invoice_id
+      - name: appointment_date
+        data_tests:
+          - not_null
+
+  - name: dim_patient
+    columns:
+      - name: patient_id
+        description: "Primary key for patients."
+        data_tests:
+          - unique
+          - not_null
+      - name: first_name
+      - name: last_name
+      - name: email
+
+  - name: dim_doctor
+    columns:
+      - name: doctor_id
+        data_tests:
+          - not_null
+      - name: doctor_name
+      - name: specialization
+      - name: doctor_contact
+
+  - name: dim_medical_procedure
+    columns:
+      - name: procedure_id
+        data_tests:
+          - unique
+          - not_null
+      - name: procedure_name
+      - name: appointment_id
+        description: "Foreign key linking to the appointment fact table."
+
+  - name: dim_billing
+    columns:
+      - name: invoice_id
+        data_tests:
+          - unique
+          - not_null
+
