@@ -26,6 +26,7 @@ FROM {{source('landing','stg_cities')}}
 
 {% if is_incremental() %}
 
-    where date::date >= (select max(date::date) from {{this}})
+    WHERE date >= (
+        select coalesce(max(date), '1970-01-01'::timestamp) from {{ this }})
 
 {% endif %}

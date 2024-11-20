@@ -1,0 +1,3 @@
+export SNOWFLAKE_ACCOUNT=qzcrtyv-cr51063
+export DBT_USER=olha
+export DBT_PASSWORD=Aa5549sr

@@ -1,5 +1,5 @@
 
-select distinct 
+select 
     c.city_id,
     c.city,
     c.date,
