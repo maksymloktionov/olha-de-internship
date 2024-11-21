@@ -1,4 +1,5 @@
-version: '3.8'  
+version: '3.8'
+
 services:
   dbt-modeling:
     container_name: dbt-modeling
@@ -12,4 +13,3 @@ services:
     entrypoint: bash
     tty: true
     platform: linux/amd64
-
