@@ -22,4 +22,6 @@ models:
         +materialized: table  
       intermediate: 
         +materialized: view
+      staging:
+        +lookback_window: 3 
     
