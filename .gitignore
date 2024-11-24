@@ -5,3 +5,5 @@ _dbt/.user.yml
 _dbt/logs
 .github/
 personal_project/dbt-dag/
+dbt_dag/.astro/test_dag_integrity_default.py
+dbt_dag/dags/exampledag.py
