@@ -4,3 +4,4 @@ logs/
 _dbt/.user.yml
 _dbt/logs
 .github/
+personal_project/dbt-dag/
