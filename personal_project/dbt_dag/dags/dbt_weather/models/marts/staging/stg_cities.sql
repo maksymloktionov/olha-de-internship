@@ -27,6 +27,6 @@ FROM {{source('landing','stg_cities')}}
 {% if is_incremental() %}
 
     
-    where date::date >= DATEADD(DAY, -3, CURRENT_DATE())
+    where date::date >= (select max(date::date) from {{this}})
 
 {% endif %}
