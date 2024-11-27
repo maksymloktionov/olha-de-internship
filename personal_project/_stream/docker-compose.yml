@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  weather-stream:
+    build: .
+    container_name: stream_container
+    env_file:
+      - .env  
+    volumes:
+      - .:/app
+    restart: always 
+    tty: true
