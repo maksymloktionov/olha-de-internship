@@ -18,7 +18,7 @@ with base_data as(
     ),
 
 cleaned_data as(
-    select 
+    select distinct
         city_id,
         city,
         country_id,

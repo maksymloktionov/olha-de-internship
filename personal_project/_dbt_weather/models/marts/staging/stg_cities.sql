@@ -26,6 +26,6 @@ FROM {{source('landing','stg_cities')}}
 
 {% if is_incremental() %}
 
-    where date::date >= (select max(date::date) from {{this}})
+    where date::date >= (select coalesce( max(date::date), '2020-01-01' from {{this}})
 
 {% endif %}
