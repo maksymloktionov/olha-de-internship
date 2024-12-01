@@ -1,3 +1,0 @@
-# Astro Runtime includes the following pre-installed providers packages: https://www.astronomer.io/docs/astro/runtime-image-architecture#propersonal_project/_dbt_weathervider-packages
-astronomer-cosmos
-apache-airflow-providers-snowflake
