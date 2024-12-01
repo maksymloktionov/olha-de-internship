@@ -2,4 +2,3 @@
 astronomer-cosmos
 apache-airflow-providers-snowflake
 dbt-core
-python-dotenv
