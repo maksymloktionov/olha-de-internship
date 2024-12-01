@@ -1,12 +1,9 @@
 from pendulum import datetime
-from dotenv import load_dotenv
-import os
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 
 DBT_VENV_PATH = "/usr/local/airflow/dbt_venv/bin/activate"
 DBT_PROJECT_DIR = "/usr/local/airflow/dbt/_dbt_weather"
-load_dotenv(dotenv_path="/usr/local/airflow/.env")
 
 
 with DAG(
@@ -20,12 +17,7 @@ with DAG(
         task_id="dbt_deps",
         bash_command=f"source {DBT_VENV_PATH} && "
                      f"dbt deps --profiles-dir {DBT_PROJECT_DIR} --project-dir {DBT_PROJECT_DIR}",
-         env={
-        "SNOWFLAKE_ACCOUNT": os.getenv("SNOWFLAKE_ACCOUNT"),
-        "DBT_USER": os.getenv("DBT_USER"),
-        "DBT_PASSWORD": os.getenv("DBT_PASSWORD"),
-        **os.environ
-    }
+    
     )
 
     dbt_run = BashOperator(
