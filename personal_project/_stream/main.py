@@ -92,5 +92,5 @@ while True:
         else:
             print(f"Failed to fetch weather data for {city}: {response.get('message')}")
 
-    print("Waiting for 5 minutes before the next data fetch...")
+    print("Waiting a minute before the next data fetch...")
     time.sleep(60)

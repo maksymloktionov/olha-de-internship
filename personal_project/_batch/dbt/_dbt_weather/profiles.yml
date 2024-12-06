@@ -3,7 +3,7 @@ weather_analysis:
     dev:
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       database: DATA_ANALYTICS
-      role: accountadmin
+      role: dbt_transform
       schema: transformations
       threads: 8
       type: snowflake
