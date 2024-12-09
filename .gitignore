@@ -9,3 +9,4 @@ dbt_dag/.astro/test_dag_integrity_default.py
 dbt_dag/dags/exampledag.py
 dbt_dag/tests/dags/test_dag_example.py
 personal_project/_stream/.env
+personal_project/_stream/dl.cfg
