@@ -1,0 +1,18 @@
+version: '3'
+services:
+  pyspark:
+    build:
+      context: .
+      dockerfile: Dockerfile  
+    ports:
+      - "4040:4040"  
+    volumes:
+      - .:/usr/src/app 
+    working_dir: /usr/src/app  
+    command: >
+      /usr/local/bin/spark-submit
+      --master local[*] 
+      --driver-memory 8g 
+      /usr/src/app/spark.py
+      
+    tty: true
